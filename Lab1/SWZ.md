@@ -43,3 +43,20 @@
   #### 4.3 Oczekiwania i potrzeby interesariuszy
 
   #### 4.4 Potencjalne konflikty interesów
+
+### V. Wymagania Jakościowe i Ograniczenia
+
+  #### 5.1 Wymagania dotyczące wydajności
+
+  #### 5.2 Wymagania dotyczące bezpieczeństwa
+
+  #### 5.3 Wymagania dotyczące niezawodności
+
+  #### 5.4 Ograniczenia środowiskowe
+
+### VI. Słownik Dziedziny
+  #### 6.1 Terminologia biznesowa
+
+  #### 6.2 Terminologia techniczna
+
+  #### 6.3 Terminologia użytkownicza
