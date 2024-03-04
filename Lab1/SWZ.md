@@ -10,9 +10,24 @@
 
   #### 1.3 Podział pracy na sekcje
   - Analitycy Biznesowi:
+    - Jakub Wysocki
+    - Szymon Ochnio
+    - Mateusz Sobol
   - Analitycy Systemowi:
+    - Krzysztof Jurkowski
+    - Mateusz Czarnecki
+    - Filip Sosnowski
+    - Karol Zalewski
+    - Sebastian Pawlińsk
   - Specjaliści od Przypadków Użycia:
+    - Tymoteusz Gryszkalis
+    - Szymon Kopańko
+    - Wojtek Szade
   - Specjalista od Dokumentacji:
+    - Angelina Sudenkova
+    - Szymon Rogoziński
+    - Igor Kędzierawski
+    - Julia Owczarczyk
 
 ### II. Opis Problemu Biznesowego i Celu Projektu
 
