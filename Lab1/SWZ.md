@@ -1,4 +1,4 @@
-## Specyfikacja Wymagań Zamawiającego (SWZ) – Szablon Dokumentu
+## Specyfikacja Wymagań Zamawiającego
 
 ### I. Wprowadzenie
 
@@ -32,12 +32,16 @@
 ### II. Opis Problemu Biznesowego i Celu Projektu
 
   #### 2.1 Opis aktualnej sytuacji biznesowej
+  Aktualnie na rynku znajduje się wiele usług cateringowych, które są rozproszone. A osoby chcącę spersjonalizować swoją dietę muszą korzystać z wielu systemów aby zamówić posiłki z firm, których je interesują.
 
   #### 2.2 Problemy i wyzwania
+  Problemem jest właśnie rozporszony stan usług. Wyzwaniem może być przyciągnięcie firm do zewnętrznego systemu oraz ujednolicić ofery kateringowe aby aplikacja była spójna.
 
   #### 2.3 Cel projektu
+  Celem jest utworzenie systemu informatycznego, który zbierał by oferty kateringowe w jednym miejscu u umozliwiał by użytkownikowi zamawianie róznych dań z różnych firm w formie jednego posiłku oraz zamawianie spersonalizowanych diet. System ma być też platformą dla producentów gdzie mogą się reklamować w formie postów publikowanych w ramach profilu producenta.
 
   #### 2.4 Korzyści płynące z realizacji projektu
+  Znaczącą korzyścią jest scenatralizowanie firm kateringowych w jedynym systemie dzięki czemu użytkownicy mogą szysbciej znaleść interesującą ich ofertę oraz przedewszystkim zamawiać dania z jednego miejsca na raz. Ponadto firmy kateringowe dostają platformę do reklamy własnych usług oraz do dotarcia do osób, które są zainteresowane ich działalnością.
 
 ### III. Lista Kluczowych Funkcjonalności i Wymagań Biznesowych
 
@@ -52,12 +56,20 @@
 ### IV. Identyfikacja Interesariuszy Projektu
 
   #### 4.1 Definicja interesariuszy
+  Interesariuszami w projekcie są firmy kateringowe, osoby kupujace usługi kateringowe, firma zamawiająca system.
 
   #### 4.2 Opis roli każdego interesariusza
+  Firma kateringowa pełni rolę udostępniającego usługi kateringowe dla aplikacji. <br>
+  Osoby kupujące usługi kateringowe to użytkownicy aplikacji bez nich aplikacji nie istnieje. Są grupą docelową projektu. <br>
+  Firma zamawiająca ma kierować działaniami projektu, pnieważ to oni stoją za jego wizją.
 
   #### 4.3 Oczekiwania i potrzeby interesariuszy
+  Firmy katerignowe oczekują platformy, która zwiększy sprzedaż ich usług i zarazem przestrzeni do reklamy poprzez publikowanie postów. <br>
+  Osoby kupujące chcą mieć łatwy dostęp do szerokiej oferty kateringowej i personalizować w dowolny sposób plan jedzeniowy. <br>
+  Firma zamawiająca chce zarobić na aplikacji za pomocą programów premium dla użytkowników aplikacji.
 
   #### 4.4 Potencjalne konflikty interesów
+  Potęcjalne konflikty mogą powstać na linii firm kateringowych i firm zamawiajacych, ponieważ firmy kateringowe nie bedą chciały być przedstawiane w jednym miejscu z innymi konkurentami lub uznają że zysk z wzięcia udziału w takim przedsięwzieciu nie będzie wart spełnienia wymagań firmy zamawiającej aplikacjie. Konflikt interesów może też powstać na linie firma zamawiająca użytkownicy gdy właścicele waplikacji zarządają zbyt duzych cen za plany premium bez odpowiednich benefitów. W takim wypadku użytkownicy nie będą ich kupować, a właścicle nie zarobi zamierzonej kwoty.
 
 ### V. Wymagania Jakościowe i Ograniczenia
 
@@ -71,7 +83,18 @@
 
 ### VI. Słownik Dziedziny
   #### 6.1 Terminologia biznesowa
+  **usługodawca** - firma kateringowa <br>
+  **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
+  **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
 
   #### 6.2 Terminologia techniczna
+  **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
 
   #### 6.3 Terminologia użytkownicza
+  **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
+  **recenzja** - opinia użytkownika na temat dania lub usługodawcy <br>
+  **rodzaj diety** - wyłącznie nazwa <br>
+  **dieta** - pełen plan jedzeniowy na określony czas <br>
+  **rodzaj posiłeku** - np. śniadanie, oboad, kolacja <br>
+  **posiłek** - składa się z jednego lub więcej dań <br>
+  **danie** - składa się ze składników <br>
