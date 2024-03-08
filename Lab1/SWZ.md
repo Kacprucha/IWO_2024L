@@ -73,24 +73,38 @@
 
 ### V. Wymagania Jakościowe i Ograniczenia
 
-  #### 5.1 Wymagania dotyczące wydajności
+  #### 5.1 Wizja systemu
+  
+  #### 5.2 Lista cech systemu
+  
+  #### 5.3 Wymagania dotyczące wydajności
 
-  #### 5.2 Wymagania dotyczące bezpieczeństwa
+  #### 5.4 Wymagania dotyczące bezpieczeństwa
 
-  #### 5.3 Wymagania dotyczące niezawodności
+  #### 5.5 Wymagania dotyczące niezawodności
 
-  #### 5.4 Ograniczenia środowiskowe
+  #### 5.6 Ograniczenia środowiskowe
 
-### VI. Słownik Dziedziny
-  #### 6.1 Terminologia biznesowa
+### VI. Opracowanie i dokumentowanie przypadków użycia
+
+  #### 6.1 Zrozumienie wymagań
+
+  #### 6.2 Identyfikacja aktorów
+
+  #### 6.3 Lista przypadków użycia
+
+  #### 6.4 Opisy przypadków użycia
+
+### VII. Słownik Dziedziny
+  #### 7.1 Terminologia biznesowa
   **usługodawca** - firma kateringowa <br>
   **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
   **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
 
-  #### 6.2 Terminologia techniczna
+  #### 7.2 Terminologia techniczna
   **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
 
-  #### 6.3 Terminologia użytkownicza
+  #### 7.3 Terminologia użytkownicza
   **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
   **recenzja** - opinia użytkownika na temat dania lub usługodawcy <br>
   **rodzaj diety** - wyłącznie nazwa <br>
