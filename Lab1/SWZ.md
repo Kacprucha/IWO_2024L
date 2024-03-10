@@ -29,7 +29,9 @@
     - Igor Kędzierawski
     - Julia Owczarczyk
 
-### II. Opis Problemu Biznesowego i Celu Projektu
+    Przy odpowiednich sekcjach kursywą zostaną oznaczone osoby odpowiedzialne za poszczególne sekcje.
+
+### II. Opis Problemu Biznesowego i Celu Projektu *Mateusz Sobol*
 
   #### 2.1 Opis aktualnej sytuacji biznesowej
   Aktualnie na rynku znajduje się wiele usług cateringowych, które są rozproszone. A osoby chcącę spersjonalizować swoją dietę muszą korzystać z wielu systemów aby zamówić posiłki z firm, których je interesują.
@@ -45,15 +47,15 @@
 
 ### III. Lista Kluczowych Funkcjonalności i Wymagań Biznesowych
 
-  #### 3.1 Ogólne wymagania funkcjonalne
+  #### 3.1 Ogólne wymagania funkcjonalne *Jakub Wysocki*
 
-  #### 3.2 Szczegółowe funkcjonalności systemu
+  #### 3.2 Szczegółowe funkcjonalności systemu *Jakub Wysocki*
 
-  #### 3.3 Wymagania dotyczące wydajności
+  #### 3.3 Wymagania dotyczące wydajności *Szymon Ochnio*
 
-  #### 3.4 Wymagania dotyczące bezpieczeństwa
+  #### 3.4 Wymagania dotyczące bezpieczeństwa *Szymon Ochnio*
 
-### IV. Identyfikacja Interesariuszy Projektu
+### IV. Identyfikacja Interesariuszy Projektu *Kacper Karaś*
 
   #### 4.1 Definicja interesariuszy
   Interesariuszami w projekcie są firmy kateringowe, osoby kupujace usługi kateringowe, firma zamawiająca system.
@@ -73,29 +75,29 @@
 
 ### V. Wymagania Jakościowe i Ograniczenia
 
-  #### 5.1 Wizja systemu
+  #### 5.1 Wizja systemu *Krzysztof Jurkowski*
   
-  #### 5.2 Lista cech systemu
+  #### 5.2 Lista cech systemu *Krzysztof Jurkowski, Mateusz Czarnecki*
   
-  #### 5.3 Wymagania dotyczące wydajności
+  #### 5.3 Wymagania dotyczące wydajności *Mateusz Czarnecki, Filip Sosnowski*
 
-  #### 5.4 Wymagania dotyczące bezpieczeństwa
+  #### 5.4 Wymagania dotyczące bezpieczeństwa *Filip Sosnowski, Karol Zalewski*
 
-  #### 5.5 Wymagania dotyczące niezawodności
+  #### 5.5 Wymagania dotyczące niezawodności *Karol Zalewski, Sebastian Pawliński*
 
-  #### 5.6 Ograniczenia środowiskowe
+  #### 5.6 Ograniczenia środowiskowe *Sebastian Pawliński*
 
 ### VI. Opracowanie i dokumentowanie przypadków użycia
 
-  #### 6.1 Zrozumienie wymagań
+  #### 6.1 Zrozumienie wymagań *Tymoteusz Gryszkalis*
 
-  #### 6.2 Identyfikacja aktorów
+  #### 6.2 Identyfikacja aktorów *Tymoteusz Gryszkalis*
 
-  #### 6.3 Lista przypadków użycia
+  #### 6.3 Lista przypadków użycia *Szymon Kopańko, Wojtek Szade*
 
-  #### 6.4 Opisy przypadków użycia
+  #### 6.4 Opisy przypadków użycia *Szymon Kopańko, Wojtek Szade*
 
-### VII. Słownik Dziedziny
+### VII. Słownik Dziedziny *całość zespołu*
   #### 7.1 Terminologia biznesowa
   **usługodawca** - firma kateringowa <br>
   **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
