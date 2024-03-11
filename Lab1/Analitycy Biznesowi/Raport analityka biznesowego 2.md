@@ -2,7 +2,6 @@
 *autor: Szymon Ochnio*
 
 #### 3.3 Wymagania dotyczące wydajności
-
 - **Zapewnienie użytkownikom szybkiego dostępu do aplikacji**
   - **Cel:** Chcemy, aby nasi użytkownicy mogli łatwo i szybko korzystać z naszej aplikacji webowej i mobilnej, minimalizując czas ładowania aplikacji.
   - **Oczekiwane rezultaty:** Jak najkrótszy czas ładowania aplikacji.
@@ -20,7 +19,6 @@
   - **Oczekiwane rezultaty:** Jak najkrótszy czas dostarczania powiadomień.
 
 #### 3.4 Wymagania dotyczące bezpieczeństwa
-
 - **Silna ochrona danych osobowych**
   - **Cel:** Naszym priorytetem jest zapewnienie bezpieczeństwa danych naszych użytkowników. Dążymy do tego, by były one nie tylko odpowiednio zabezpieczone, ale także transmitowane w bezpieczny sposób.
   - **Oczekiwane rezultaty:** Spełnienie standardów bezpieczeństwa dotyczących przechowywania danych.

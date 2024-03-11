@@ -2,7 +2,6 @@
 *autor: Mateusz Czarnecki*
 
 #### 5.2 Lista cech systemu
-
 - Skalowalność i elastyczność z wykorzystaniem rozwiązań chmurowych.
 - Dostępność 24/7.
 - Silne szyfrowanie i bezpieczne przechowywanie danych użytkowników.
@@ -16,7 +15,6 @@
 - Integracja z zewnętrznymi systemami dostaw i płatności dla optymalizacji procesów.
 
 #### 5.3 Wymagania dotyczące wydajności
-
 - Czas ładowania aplikacji: średnio do 2 sekund, maksymalnie do 3 sekund.
 - Czas odpowiedzi na zapytania: średnio do 0.5 sekundy, maksymalnie do 1 sekundy.
 - Skalowalność: utrzymanie wydajności przy skokowym wzroście liczby użytkowników i dostawców.

@@ -2,7 +2,6 @@
 *autorzy: Wojciech Szade i Szymon Kopańko*
 
 ### 6.3 Lista Przypadków Użycia
-
 1. **Synchronizacja**
 2. **Powiadomienia**
 3. **Wielojęzyczność**
@@ -23,7 +22,6 @@
 18. **Konta**
 
 ### 6.4 Opis Przypadków Użycia
-
 #### Synchronizacja
 
 **Przypadek użycia: Synchronizacja danych między stroną internetową a aplikacją mobilną**
@@ -252,9 +250,7 @@
 
 #### Konto premium
 
-**Przypadek
-
- użycia: Zakup konta premium przez użytkownika**
+**Przypadek użycia: Zakup konta premium przez użytkownika**
 
 **Aktorzy:** Użytkownik
 

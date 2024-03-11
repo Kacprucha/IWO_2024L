@@ -1,9 +1,8 @@
 # Raport dot. Przypadków Użycia w Systemie
 *autor: Tymoteusz Gryszkalis*
 
-#### 6.1 Zrozumienie wymagań
-
-##### Elementy systemu
+### 6.1 Zrozumienie wymagań
+#### Elementy systemu
 
 - **Aplikacja kliencka (front-end)**: Ta strona będzie interfejsem użytkownika, z którym będą wchodzić w interakcję użytkownicy końcowi. Może to być aplikacja webowa dostępna przez przeglądarkę internetową lub aplikacja mobilna na urządzeniach Android lub iOS.
 
@@ -13,7 +12,7 @@
 
 - **Systemy zewnętrzne**: Jeśli aplikacja wymaga integracji z zewnętrznymi systemami, takimi jak systemy płatności online lub systemy monitorowania, będą one komunikować się z serwerem aplikacyjnym poprzez odpowiednie interfejsy API.
 
-##### Komunikacja elementów systemu:
+#### Komunikacja elementów systemu:
 
 - Aplikacja klienta - Serwer aplikacji:
   - Aplikacja klienta wysyła zapytania do serwera aplikacji w celu pobierania danych oraz przetwarzania operacji, takie jak składanie zamówień czy przeglądanie produktów.
@@ -22,8 +21,7 @@
   - Serwer aplikacji komunikuje się z bazą danych w celu pobierania, aktualizowania i przechowywania danych użytkowników, produktów, zamówień itp.
   - Baza danych odpowiada na zapytania serwera aplikacji, dostarczając lub aktualizując potrzebne dane.
 
-#### 6.2 Identyfikacja głównych aktorów
-
+### 6.2 Identyfikacja głównych aktorów
 - **Użytkownicy aplikacji webowej i mobilnej**: Użytkownicy są zainteresowani minimalnym czasem ładowania aplikacji oraz otrzymywaniem szybkich odpowiedzi na swoje zapytania. Są również zainteresowani otrzymywaniem natychmiastowych powiadomień. Oczekują, że system będzie szyfrował wszystkie dane przesyłane przez niego i przechowywane w nim, aby ich dane osobowe były bezpieczne. Oczekują także, że system będzie w stanie szybko i efektywnie przywracać się do poprawnego stanu po wystąpieniu awarii, oraz zapewniał skuteczne mechanizmy monitorowania aktywności oraz raportowania wszelkich nieprawidłowości. Muszą być informowani o przerwach serwisowych z odpowiednim wyprzedzeniem. Muszą też być świadomi, że w przypadku awarii systemu, aplikacja automatycznie przechodzi na backupowe środowisko, aby minimalizować przestoje. Oczekują, że aplikacja będzie działać zgodnie z tą specyfikacją, zapewniając spójne doświadczenie użytkownika na wszystkich platformach.
 - **Dostawcy**: Dostawcy korzystają z systemu w celu dostarczania usług lub towarów. Są zainteresowani skalowalnością systemu oraz szybkim przetwarzaniem płatności za zamówienia.
 - **Administratorzy systemu**: Administratorzy mają dostęp do zaawansowanych funkcji systemowych i są odpowiedzialni za zarządzanie rolami dostępu, monitorowanie aktywności, oraz zapewnianie bezpieczeństwa systemu. Administratorzy muszą skutecznie monitorować aktywność, rejestrując istotne operacje i zdarzenia w systemie. Ponadto muszą zarządzać mechanizmami zapobiegającymi utracie danych, takimi jak regularne backupy i przywracanie danych, oraz definiować klarowne i skuteczne zarządzanie dostępem do zasobów, oparte na zdefiniowanych rolach i uprawnieniach. Administratorzy muszą zaplanować przerwy serwisowe, które muszą być komunikowane użytkownikom z trzydniowym wyprzedzeniem. Ponadto, w przypadku awarii systemu, administratorzy muszą zapewnić automatyczne przejście aplikacji na backupowe środowisko w celu minimalizacji przestojów.
