@@ -1,5 +1,5 @@
 # Raport dot. Wizji Systemu
-*Krzysztof Jurkowski*
+*autor: Krzysztof Jurkowski*
 
 #### 5.1 Wizja systemu
 System będzie wykonany w formie aplikacji PWA komunikującej się z serwerem i bazą danych poprzez web api. Pozwoli to na zapewnienie poprawnego działania i takiego samego user experience niezależnie od urządzenia z którego korzysta użytkownik (przeglądarka, telefon, tablet itp.).
