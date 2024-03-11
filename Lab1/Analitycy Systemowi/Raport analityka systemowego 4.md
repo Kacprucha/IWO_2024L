@@ -1,0 +1,61 @@
+# Raport dot. Wizji Systemu
+*autor: Karol Zalewski*
+
+#### 5.4 Wymagania dotyczące bezpieczeństwa:
+- System powinien skutecznie monitorować aktywność, rejestrując istotne operacje i zdarzenia:
+    - Opis: System powinien być wyposażony w mechanizmy monitorujące, które rejestrują kluczowe operacje oraz zdarzenia w systemie, umożliwiające późniejszą analizę i identyfikację potencjalnych nieprawidłowości.
+    - Sposób pomiaru: Analiza logów systemowych pod kątem zarejestrowanych operacji i zdarzeń, oraz ich odpowiednio szybka dostępność w celu identyfikacji potencjalnych incydentów.
+    - Możliwy wynik pomiaru: Wysoki poziom kompletności oraz dostępności zarejestrowanych informacji, umożliwiający skuteczną analizę w przypadku wykrycia podejrzanej aktywności.
+    - Oczekiwane wartości: Skuteczny monitoring aktywności, który umożliwia szybką reakcję na potencjalne zagrożenia oraz identyfikację nieprawidłowości w systemie.
+- System powinien szyfrować wszystkie dane przesyłane przez niego i przechowywane w nim:
+    - Opis: Wszystkie dane przesyłane między komponentami systemu oraz przechowywane w jego bazie danych powinny być poddane procesom szyfrowania, aby zabezpieczyć je przed nieautoryzowanym dostępem.
+    - Sposób pomiaru: Sprawdzenie, czy wszelkie dane są przechowywane w postaci zaszyfrowanej, a procesy przesyłania danych są zabezpieczone protokołami szyfrowania.
+    - Możliwy wynik pomiaru: 100% danych przechowywanych w zaszyfrowanej formie, bez wyjątków.
+    - Oczekiwane wartości: Pełne zastosowanie szyfrowania dla danych przesyłanych i przechowywanych, gwarantujące pełną poufność i integralność informacji.
+- System powinien zapewniać klarowne i skuteczne zarządzanie dostępem do zasobów, oparte na zdefiniowanych rolach i uprawnieniach:
+    - Opis: System powinien implementować system zarządzania dostępem (Access Management), umożliwiający przydzielanie uprawnień w oparciu o zdefiniowane role użytkowników, minimalizując ryzyko nieautoryzowanego dostępu.
+    - Sposób pomiaru: Przegląd struktury zarządzania dostępem, audytowanie przydzielonych uprawnień w zgodności z zdefiniowanymi rolami.
+    - Możliwy wynik pomiaru: Zgodność przydzielonych uprawnień z zdefiniowanymi rolami użytkowników na poziomie 99% i wyżej.
+    - Oczekiwane wartości: Skuteczne zarządzanie dostępem oparte na zdefiniowanych rolach, eliminujące możliwość nieuprawnionego dostępu do zasobów systemu.
+- System powinien mieć zdefiniowany plan reakcji na incydenty bezpieczeństwa, określający kroki do podjęcia w przypadku wykrycia ataku lub naruszenia:
+    - Opis: System powinien posiadać dokumentowany plan reakcji na incydenty bezpieczeństwa, który precyzyjnie określa kroki do podjęcia w przypadku wykrycia ataku lub naruszenia bezpieczeństwa.
+    - Sposób pomiaru: Regularne testy planu reakcji na incydenty, sprawdzające skuteczność i aktualność zastosowanych procedur.
+    - Możliwy wynik pomiaru: Skuteczność planu reakcji na incydenty na poziomie co najmniej 95%.
+    - Oczekiwane wartości: Skuteczny i aktualny plan reakcji na incydenty, minimalizujący czas reakcji w przypadku potencjalnych zagrożeń.
+
+#### 5.5 Wymagania dotyczące niezawodności:
+- System powinien być w stanie szybko i efektywnie przywracać się do poprawnego stanu po wystąpieniu awarii:
+    - Opis: System powinien posiadać skuteczne mechanizmy przywracania po awarii, zapewniające szybkie i efektywne przywrócenie funkcji systemu do poprawnego stanu.
+    - Sposób pomiaru: Testy awaryjne, w trakcie których oceniana jest skuteczność procesów przywracania po różnych rodzajach awarii.
+    - Możliwy wynik pomiaru: Czas przywrócenia systemu do pełnej funkcjonalności na poziomie minimalnym.
+    - Oczekiwane wartości: Skuteczne mechanizmy przywracania, minimalizujące czas niedostępności systemu po wystąpieniu awarii.
+- System powinien być skalowalny, aby dostosowywać się do zmieniającego się obciążenia:
+    - Opis: System powinien być zdolny do dynamicznego dostosowywania swojej infrastruktury w zależności od zmieniającego się obciążenia, zapewniając elastyczność i skalowalność.
+    - Sposób pomiaru: Testy wydajnościowe i skalowalności, oceniające zdolność systemu do obsługi rosnącej liczby użytkowników lub zwiększonego obciążenia.
+    - Możliwy wynik pomiaru: Skuteczne dostosowywanie się systemu do zmieniającego się obciążenia bez utraty wydajności.
+    - Oczekiwane wartości: Elastyczny i skalowalny system, dostosowujący się do rosnących wymagań użytkowników.
+- System powinien regularnie przechodzić testy odpornościowe pod obciążeniem i w warunkach ekstremalnych:
+    - Opis: System powinien być regularnie testowany pod kątem odporności na obciążenie oraz w warunkach ekstremalnych, aby zweryfikować jego stabilność i wydajność.
+    - Sposób pomiaru: Testy obciążeniowe i warunków ekstremalnych, oceniające zachowanie systemu w sytuacjach skrajnych.
+    - Możliwy wynik pomiaru: Stabilność systemu w warunkach ekstremalnych na poziomie akceptowalnym.
+    - Oczekiwane wartości: System odporny na obciążenie i warunki ekstremalne, zapewniający stabilność działania nawet w trudnych sytuacjach.
+- System powinien oferować skuteczne mechanizmy monitorowania aktywności oraz raportowania wszelkich nieprawidłowości:
+    - Opis: System powinien być wyposażony w mechanizmy monitorowania aktywności, umożliwiające szybką identyfikację i reakcję na wszelkie nieprawidłowości.
+    - Sposób pomiaru: Analiza raportów monitorowania aktywności oraz czas reakcji na wykryte nieprawidłowości.
+    - Możliwy wynik pomiaru: Szybka identyfikacja i reakcja na wszelkie nieprawidłowości.
+    - Oczekiwane wartości: Skuteczne monitorowanie aktywności, minimalizujące czas reakcji na ewentualne problemy.
+- System powinien zapewniać skuteczne mechanizmy backupowania danych oraz przywracania ich w przypadku utraty:
+    - Opis: System powinien regularnie tworzyć kopie zapasowe danych oraz umożliwiać ich szybkie przywrócenie w przypadku utraty lub uszkodzenia.
+    - Sposób pomiaru: Testy awaryjne, oceniające skuteczność procesów backupowania i przywracania danych.
+    - Możliwy wynik pomiaru: Skuteczne przywracanie danych po utracie na poziomie minimalnym.
+    - Oczekiwane wartości: Regularne i skuteczne procesy backupowania oraz przywracania danych, minimalizujące ryzyko utraty informacji.
+- System powinien być wyposażony w skuteczny system zarządzania błędami, który umożliwia szybkie wykrywanie, raportowanie i naprawę błędów:
+    - Opis: System powinien posiadać system zarządzania błędami, który umożliwia szybkie wykrywanie, raportowanie i naprawę wszelkich błędów w funkcjonowaniu systemu.
+    - Sposób pomiaru: Analiza czasu reakcji na wykryte błędy oraz skuteczność ich naprawy.
+    - Możliwy wynik pomiaru: Szybkie wykrywanie, raportowanie i naprawa błędów na poziomie akceptowalnym.
+    - Oczekiwane wartości: Skuteczny system zarządzania błędami, minimalizujący wpływ błędów na działanie systemu oraz informowanie użytkowników o ewentualnych problemach.
+- System powinien posiadać dokumentowany plan awaryjny, który określa kroki do podjęcia w przypadku poważnych awarii:
+    - Opis: System powinien mieć dokumentowany plan awaryjny, precyzyjnie określający kroki do podjęcia w przypadku poważnych awarii, takich jak utrata dostępu do zasobów czy zniszczenie danych.
+    - Sposób pomiaru: Regularne testy planu awaryjnego, sprawdzające skuteczność procedur oraz czas reakcji na poważne awarie.
+    - Możliwy wynik pomiaru: Skuteczność planu awaryjnego na poziomie co najmniej 95%.
+    - Oczekiwane wartości: Skuteczny i aktualny plan awaryjny, minimalizujący czas reakcji w przypadku poważnych awarii.
