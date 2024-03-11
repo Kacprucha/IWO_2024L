@@ -1,14 +1,14 @@
-## Specyfikacja Wymagań Zamawiającego
+# Specyfikacja Wymagań Zamawiającego
 
-### I. Wprowadzenie
+## I. Wprowadzenie
 
-  #### 1.1 Cel dokumentu
+  ### 1.1 Cel dokumentu
   Dokument ten będzie podstawą do dalszej pracy nad projektem, zawierając szczegółowy opis problemu biznesowego, wizję systemu, modele procesów biznesowych, listę przypadków użycia oraz wymagania jakościowe.
 
-  #### 1.2 Zakres projektu
+  ### 1.2 Zakres projektu
   System integrujący dostawców cateringu. Planowany system powinien umożliwiać integrację usług wielu takich dostawców w jednym miejscu. Dzięki temu możliwe będzie zamawianie posiłków od wielu dostawców w obrębie jednego zamówienia. W szczególności, dotyczy to możliwości łączenia posiłków od różnych dostawców w ramach diet dziennych, tygodniowych, miesięcznych itp.
 
-  #### 1.3 Podział pracy na sekcje
+  ### 1.3 Podział pracy na sekcje
   - Analitycy Biznesowi:
     - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu*
     - Szymon Ochnio *- 3.3 Wymagania dotyczące wydajności, 3.4 Wymagania dotyczące bezpieczeństwa*
@@ -31,24 +31,24 @@
 
   Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowiedzialna. **Specjaliści od Dokumentacji** mieli wspólne zadanie **nadzorowania tworzenia dokumentów innych członków** zespołu oraz **utworzenie wspólnego dokumentu** łączącego całość pracy zespołu. Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków zespołu.
 
-### II. Opis Problemu Biznesowego i Celu Projektu
+## II. Opis Problemu Biznesowego i Celu Projektu
 
-  #### 2.1 Opis aktualnej sytuacji biznesowej
+  ### 2.1 Opis aktualnej sytuacji biznesowej
   Aktualnie na rynku znajduje się wiele usług kateringowych. Każda z nich posiada własną stronę internetową, wymagającą utworzenia konta. Stron z recenzjami jest wiele, ale często nie posiadają wszystkich dostępnych na rynku ofert.  Osoby poszukujące usług kateringowych, poświęcają dużo czasu na przeglądanie różnych stron internetowych oraz analizowanie recenzji. Nawet jak znajdą interesującą ich ofertę, często nie zadowala ich w pełni i są zmuszeni do korzystania z wielu usług kateringowych.
 
-  #### 2.2 Problemy i wyzwania
+  ### 2.2 Problemy i wyzwania
   Największym wyzwaniem będzie zapewnienie jak największej dostępności systemu. System musi być wielojęzyczny, wieloplatformowy oraz niezawodny, aby dotrzeć do jak największej liczby klientów. Ponadto, dużym wyzwaniem stanowić będzie komunikacja z usługami kateringowymi.
 
-  #### 2.3 Cel projektu
+  ### 2.3 Cel projektu
   Celem jest utworzenie systemu informatycznego, który zbierałby oferty kateringowe w jednym miejscu i umożliwiał użytkownikowi szybkie i łatwe odnalezienie ofert. Ponadto, użytkownik mógłby zamawiać różne dania z różnych firm w formie jednego posiłku oraz zamawiać spersonalizowane diety. System ma być też platformą dla producentów, gdzie mogą się reklamować w formie postów publikowanych w ramach profilu producenta oraz zdobyć dostęp do większej ilości klientów.
 
-  #### 2.4 Korzyści płynące z realizacji projektu
+  ### 2.4 Korzyści płynące z realizacji projektu
   Firmy kateringowe otrzymują możliwość łatwego i bezpiecznego publikowania swoich ofert oraz przeglądania swoich statystyk. Ponadto, mają możliwość reklamowania swoich ofert i zdobycia dostępu do większej ilości klientów. 
   Dla użytkowników główną korzyścią jest zwiększenie wygody.Mogą oni w łatwy sposób odnaleźć usługi kateringowe, mieszać ich oferty oraz sprawdzać recenzje. Otrzymują łatwy system śledzenia promocji, a dodatkowo otrzymują rekomendację na podstawie historii zamówień, co pozwala im na odkrywanie nowych dań.
 
-### III. Lista Kluczowych Funkcjonalności i Wymagań Biznesowych
+## III. Lista Kluczowych Funkcjonalności i Wymagań Biznesowych
 
-  #### 3.1 Ogólne wymagania funkcjonalne
+  ### 3.1 Ogólne wymagania funkcjonalne
   - **Synchronizacja** 
   - **Powiadomienia** 
   - **Wielojęzyczność** 
@@ -68,7 +68,7 @@
   - **Status zamówienia** 
   - **Konta**
 
-  #### 3.2 Szczegółowe funkcjonalności systemu 
+  ### 3.2 Szczegółowe funkcjonalności systemu 
   - **Synchronizacja** : Interfej użytkownika składający się z  strony internetowej i aplikacji mobilnej ma mieć zapewnioną synchronizacją danych między nimi.
   - **Powiadomienia** : Automatyczne powiadomienia dla użytkownika, które mają dotyczyć promocji,nowych ofert,statusu dostawy, zmiany regulaminu. Powiadomienia promocyjne i ofertowe możliwe do wyłączenia.
   - **Wielojęzyczność** : Obecnie działamy tylko na rynku polskim, ale Interfejs ma być wielojęzyczny z dostępnymi językami: Polski, Angielski, Ukraiński.
@@ -88,7 +88,7 @@
   - **Status zamówienia** : Użytkownik może podejrzeć status zamówień mówiący na jakim etapie dostarczania jest zamówienie.
   - **Konta** : Występują 3 rodzaje kont: usługodawca, użytkownik, admin.
 
-  #### 3.3 Wymagania dotyczące wydajności 
+  ### 3.3 Wymagania dotyczące wydajności 
   - **Zapewnienie użytkownikom szybkiego dostępu do aplikacji**
     - **Cel:** Chcemy, aby nasi użytkownicy mogli łatwo i szybko korzystać z naszej aplikacji webowej i mobilnej, minimalizując czas ładowania aplikacji.
     - **Oczekiwane rezultaty:** Jak najkrótszy czas ładowania aplikacji.
@@ -105,7 +105,7 @@
     - **Cel:** Chcemy, aby nasze powiadomienia docierały do użytkowników niemal natychmiast po ich wygenerowaniu.
     - **Oczekiwane rezultaty:** Jak najkrótszy czas dostarczania powiadomień.
 
-  #### 3.4 Wymagania dotyczące bezpieczeństwa
+  ### 3.4 Wymagania dotyczące bezpieczeństwa
   - **Silna ochrona danych osobowych**
     - **Cel:** Naszym priorytetem jest zapewnienie bezpieczeństwa danych naszych użytkowników. Dążymy do tego, by były one nie tylko odpowiednio zabezpieczone, ale także transmitowane w bezpieczny sposób.
     - **Oczekiwane rezultaty:** Spełnienie standardów bezpieczeństwa dotyczących przechowywania danych.
@@ -122,27 +122,27 @@
     - **Cel:** Chcemy skutecznie monitorować działania w naszym systemie, aby szybko wykrywać wszelkie nieprawidłowości i podejrzane działania.
     - **Oczekiwane rezultaty:** Monitorowanie i zapisywanie istotnych zdarzeń w systemie.
 
-### IV. Identyfikacja Interesariuszy Projektu 
+## IV. Identyfikacja Interesariuszy Projektu 
 
-  #### 4.1 Definicja interesariuszy
+  ### 4.1 Definicja interesariuszy
   Interesariuszami w projekcie są firmy kateringowe, osoby kupujace usługi kateringowe, firma zamawiająca system.
 
-  #### 4.2 Opis roli każdego interesariusza
+  ### 4.2 Opis roli każdego interesariusza
   Firma kateringowa pełni rolę udostępniającego usługi kateringowe dla aplikacji. <br>
   Osoby kupujące usługi kateringowe to użytkownicy aplikacji bez nich aplikacji nie istnieje. Są grupą docelową projektu. <br>
   Firma zamawiająca ma kierować działaniami projektu, pnieważ to oni stoją za jego wizją.
 
-  #### 4.3 Oczekiwania i potrzeby interesariuszy
+  ### 4.3 Oczekiwania i potrzeby interesariuszy
   Firmy katerignowe oczekują platformy, która zwiększy sprzedaż ich usług i zarazem przestrzeni do reklamy poprzez publikowanie postów. <br>
   Osoby kupujące chcą mieć łatwy dostęp do szerokiej oferty kateringowej i personalizować w dowolny sposób plan jedzeniowy. <br>
   Firma zamawiająca chce zarobić na aplikacji za pomocą programów premium dla użytkowników aplikacji.
 
-  #### 4.4 Potencjalne konflikty interesów
+  ### 4.4 Potencjalne konflikty interesów
   Potęcjalne konflikty mogą powstać na linii firm kateringowych i firm zamawiajacych, ponieważ firmy kateringowe nie bedą chciały być przedstawiane w jednym miejscu z innymi konkurentami lub uznają że zysk z wzięcia udziału w takim przedsięwzieciu nie będzie wart spełnienia wymagań firmy zamawiającej aplikacjie. Konflikt interesów może też powstać na linie firma zamawiająca użytkownicy gdy właścicele waplikacji zarządają zbyt duzych cen za plany premium bez odpowiednich benefitów. W takim wypadku użytkownicy nie będą ich kupować, a właścicle nie zarobi zamierzonej kwoty.
 
-### V. Wymagania Jakościowe i Ograniczenia
+## V. Wymagania Jakościowe i Ograniczenia
 
-  #### 5.1 Wizja systemu 
+  ### 5.1 Wizja systemu 
   System będzie wykonany w formie aplikacji PWA komunikującej się z serwerem i bazą danych poprzez web api. Pozwoli to na zapewnienie poprawnego działania i takiego samego user experience niezależnie od urządzenia z którego korzysta użytkownik (przeglądarka, telefon, tablet itp.).
   
   Dane użytkowników będą przechowywane w bezpieczny sposób w centralnej bazie danych. Niektóre dane dotyczące np. preferencji użytkownika mogą być również przechowywane lokalnie np. w ciastkach lub w pamięci przeglądarki. 
@@ -151,7 +151,7 @@
   
   Skalowalość i niezawodność systemu zapewni dostawca usług chmurowych dzięki zastosowaniu rozwiązań serverless. Dzięki temu zarówno baza danych jak i web api będą elastyczne i będą mogły odpowiednio dostosowywać moc obliczeniową systemu do obciążenia, co pozwoli na poprawne działanie systemu w przypadku np. nagłego zwiększenia odwiedzeń strony. Za pośrednictwem dostawcy usług chmurowych administrator systemu będzie również miał dostęp do wszelakich danych telemetrycznych pozwalających na szybkie i skuteczne diagnozowanie usterek.
   
-  #### 5.2 Lista cech systemu
+  ### 5.2 Lista cech systemu
   * System składa się z 3 części: aplikacji PWA, web api i bazy danych.
   * System zapewnia takie same funkcjonalności niezależnie od platformy (web/mobilna).
   * System jest dostępny 24/7.
@@ -190,7 +190,7 @@
   * System umożliwia użytkownikowi przeglądanie historii swoich zamówień.
   * System umożliwia użytkownikowi na przeglądanie statusu dzisiejszych zamówień.
   
-  #### 5.3 Wymagania dotyczące wydajności
+  ### 5.3 Wymagania dotyczące wydajności
   - **System powinien osiągać minimalny czas ładowania aplikacji webowej i mobilnej**
     - **Opis:** Średni czas ładowania aplikacji webowej i mobilnej nie powinien przekroczyć 2 sekund, maksymalnie może wynosić 3 sekundy.
     - **Sposób pomiaru:** Pomiar czasu ładowania aplikacji. Wyniki mierzymy dla 100 prób i wyliczamy średnią z pomiarów.
@@ -217,7 +217,7 @@
     - **Możliwy wynik pomiaru:** Czas dostarczania powiadomień mierzony z dokładnością do 0.1 sekundy, w przedziale od 0.1 do 2 sekund (powyżej 2 sekund uznaje się za opóźnienie w dostarczeniu powiadomienia).
     - **Oczekiwane wartości:** Czas dostarczenia powiadomień do użytkowników nie przekraczający 2 sekund, w najgorszym przypadku w czasie mniejszym niż 4 sekundy.
 
-  #### 5.4 Wymagania dotyczące bezpieczeństwa 
+  ### 5.4 Wymagania dotyczące bezpieczeństwa 
   - **System musi silnie szyfrować i bezpiecznie przechowywać dane osobowe użytkowników**
     - **Opis:** Dane osobowe klientów muszą być bezpiecznie przechowywane i przesyłane.
     - **Sposób pomiaru:** Audyty bezpieczeństwa, które mają na celu weryfikację skuteczności mechanizmów stosowanych do szyfrowania danych w systemie.
@@ -244,7 +244,7 @@
     - **Możliwy wynik pomiaru:**  System powinien rejestrować co najmniej 99% istotnych zdarzeń systemowych.
     - **Oczekiwane wartości:** Skuteczne monitorowanie aktywności zgodne z praktykami bezpieczeństwa. System rejestruje istotne wydarzenia w systemie oraz wykrywa istotne nieprawidłowości i działania podejrzane.
 
-  #### 5.5 Wymagania dotyczące niezawodności 
+  ### 5.5 Wymagania dotyczące niezawodności 
   - System powinien być w stanie szybko i efektywnie przywracać się do poprawnego stanu po wystąpieniu awarii:
     - Opis: System powinien posiadać skuteczne mechanizmy przywracania po awarii, zapewniające szybkie i efektywne przywrócenie funkcji systemu do poprawnego stanu.
     - Sposób pomiaru: Testy awaryjne, w trakcie których oceniana jest skuteczność procesów przywracania po różnych rodzajach awarii.
@@ -281,7 +281,7 @@
     - Możliwy wynik pomiaru: Skuteczność planu awaryjnego na poziomie co najmniej 95%.
     - Oczekiwane wartości: Skuteczny i aktualny plan awaryjny, minimalizujący czas reakcji w przypadku poważnych awarii.
 
-  #### 5.6 Ograniczenia środowiskowe
+  ### 5.6 Ograniczenia środowiskowe
   Ograniczenia dzielimy według typu aplikacji:
   - Aplikacja webowa:
   Aplikacja ma oferować te same funkcjonalności oraz wyglądać identycznie w podanych przeglądarkach:
@@ -293,35 +293,31 @@
   Aplikacja musi działać w systemach Android od wersji 10 oraz w systemie IOS od wersji 11.
   Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla każdych z platform.
 
-### VI. Opracowanie i dokumentowanie przypadków użycia
+## VI. Opracowanie i dokumentowanie przypadków użycia
 
-  #### 6.1 Zrozumienie wymagań
-  **Elementy systemu**
-    - *Aplikacja kliencka (front-end)*: Ta strona będzie interfejsem użytkownika, z którym będą wchodzić w interakcję użytkownicy końcowi. Może to być aplikacja webowa dostępna przez przeglądarkę internetową lub aplikacja mobilna na urządzeniach Android lub iOS.
+  ### 6.1 Zrozumienie wymagań
+  #### Elementy systemu
+  - **Aplikacja kliencka (front-end)**: Ta strona będzie interfejsem użytkownika, z którym będą wchodzić w interakcję użytkownicy końcowi. Może to być aplikacja webowa dostępna przez przeglądarkę internetową lub aplikacja mobilna na urządzeniach Android lub iOS.
+  - **Serwer aplikacji (back-end)**: To serwer, który obsługuje logikę biznesową i przetwarza żądania użytkowników. Zarządza on komunikacją między aplikacją kliencką a bazą danych oraz innymi zewnętrznymi systemami, jeśli to konieczne.
+  - **Baza danych**: W systemie będzie potrzebna baza danych do przechowywania danych użytkowników, produktów, zamówień itp. Serwer aplikacyjny będzie komunikował się z bazą danych w celu pobierania i aktualizowania danych.
+  - **Systemy zewnętrzne**: Jeśli aplikacja wymaga integracji z zewnętrznymi systemami, takimi jak systemy płatności online lub systemy monitorowania, będą one komunikować się z serwerem aplikacyjnym poprzez odpowiednie interfejsy API.
 
-    - *Serwer aplikacji (back-end)*: To serwer, który obsługuje logikę biznesową i przetwarza żądania użytkowników. Zarządza on komunikacją między aplikacją kliencką a bazą danych oraz innymi zewnętrznymi systemami, jeśli to konieczne.
+#### Komunikacja elementów systemu:
+- Aplikacja klienta - Serwer aplikacji:
+  - Aplikacja klienta wysyła zapytania do serwera aplikacji w celu pobierania danych oraz przetwarzania operacji, takie jak składanie zamówień czy przeglądanie produktów.
+  - Serwer aplikacji odpowiada na zapytania klienta, przetwarzając żądania i dostarczając odpowiednie dane.
+- Serwer aplikacji - Baza danych:
+  - Serwer aplikacji komunikuje się z bazą danych w celu pobierania, aktualizowania i przechowywania danych użytkowników, produktów, zamówień itp.
+  - Baza danych odpowiada na zapytania serwera aplikacji, dostarczając lub aktualizując potrzebne dane.
 
-    - *Baza danych*: W systemie będzie potrzebna baza danych do przechowywania danych użytkowników, produktów, zamówień itp. Serwer aplikacyjny będzie komunikował się z bazą danych w celu pobierania i aktualizowania danych.
-
-    - *Systemy zewnętrzne*: Jeśli aplikacja wymaga integracji z zewnętrznymi systemami, takimi jak systemy płatności online lub systemy monitorowania, będą one komunikować się z serwerem aplikacyjnym poprzez odpowiednie interfejsy API.
-
-  **Komunikacja elementów systemu:**
-    - Aplikacja klienta - Serwer aplikacji:
-      - Aplikacja klienta wysyła zapytania do serwera aplikacji w celu pobierania danych oraz przetwarzania operacji, takie jak składanie zamówień czy przeglądanie produktów.
-      - Serwer aplikacji odpowiada na zapytania klienta, przetwarzając żądania i dostarczając odpowiednie dane.
-
-    - Serwer aplikacji - Baza danych:
-      - Serwer aplikacji komunikuje się z bazą danych w celu pobierania, aktualizowania i przechowywania danych użytkowników, produktów, zamówień itp.
-      - Baza danych odpowiada na zapytania serwera aplikacji, dostarczając lub aktualizując potrzebne dane.
-
-  #### 6.2 Identyfikacja aktorów
+  ### 6.2 Identyfikacja aktorów
   - **Użytkownicy aplikacji webowej i mobilnej**: Użytkownicy są zainteresowani minimalnym czasem ładowania aplikacji oraz otrzymywaniem szybkich odpowiedzi na swoje zapytania. Są również zainteresowani otrzymywaniem natychmiastowych powiadomień. Oczekują, że system będzie szyfrował wszystkie dane przesyłane przez niego i przechowywane w nim, aby ich dane osobowe były bezpieczne. Oczekują także, że system będzie w stanie szybko i efektywnie przywracać się do poprawnego stanu po wystąpieniu awarii, oraz zapewniał skuteczne mechanizmy monitorowania aktywności oraz raportowania wszelkich nieprawidłowości. Muszą być informowani o przerwach serwisowych z odpowiednim wyprzedzeniem. Muszą też być świadomi, że w przypadku awarii systemu, aplikacja automatycznie przechodzi na backupowe środowisko, aby minimalizować przestoje. Oczekują, że aplikacja będzie działać zgodnie z tą specyfikacją, zapewniając spójne doświadczenie użytkownika na wszystkich platformach.
   - **Dostawcy**: Dostawcy korzystają z systemu w celu dostarczania usług lub towarów. Są zainteresowani skalowalnością systemu oraz szybkim przetwarzaniem płatności za zamówienia.
   - **Administratorzy systemu**: Administratorzy mają dostęp do zaawansowanych funkcji systemowych i są odpowiedzialni za zarządzanie rolami dostępu, monitorowanie aktywności, oraz zapewnianie bezpieczeństwa systemu. Administratorzy muszą skutecznie monitorować aktywność, rejestrując istotne operacje i zdarzenia w systemie. Ponadto muszą zarządzać mechanizmami zapobiegającymi utracie danych, takimi jak regularne backupy i przywracanie danych, oraz definiować klarowne i skuteczne zarządzanie dostępem do zasobów, oparte na zdefiniowanych rolach i uprawnieniach. Administratorzy muszą zaplanować przerwy serwisowe, które muszą być komunikowane użytkownikom z trzydniowym wyprzedzeniem. Ponadto, w przypadku awarii systemu, administratorzy muszą zapewnić automatyczne przejście aplikacji na backupowe środowisko w celu minimalizacji przestojów.
   - **Potencjalni atakujący**: Aktorzy ci mogą próbować atakować system w celu uzyskania nieautoryzowanego dostępu do danych lub uszkodzenia systemu. System musi być zaprojektowany w taki sposób, aby skutecznie się bronić przed różnymi rodzajami ataków internetowych. Wymagane są skuteczne mechanizmy obronne, takie jak firewall, filtrowanie ruchu czy detekcja anomalii, aby chronić system przed różnorodnymi atakami, takimi jak próby ataków brute force, SQL injection, Cross-Site Request Forgery (CSRF) czy Cross-Site Scripting (XSS).
   - **Zespół ds. obsługi technicznej**: Wymagane jest, aby zespół ds. obsługi technicznej monitorował i zarządzał przerwami serwisowymi oraz awariami systemu, zapewniając minimalizację przestojów i zapewniając, że procedury planowane są zgodnie z wymaganiami. Wymagane jest, aby system posiadał skuteczny system zarządzania błędami, który umożliwia szybkie wykrywanie, raportowanie i naprawę błędów. Ponadto, zespół ds. obsługi technicznej musi mieć dokumentowany plan awaryjny, który określa kroki do podjęcia w przypadku poważnych awarii, oraz regularnie przechodzić testy odpornościowe pod obciążeniem i w warunkach ekstremalnych.
 
-  #### 6.3 Lista przypadków użycia
+  ### 6.3 Lista przypadków użycia
   1. **Synchronizacja**
   2. **Powiadomienia**
   3. **Wielojęzyczność**
@@ -341,8 +337,8 @@
   17. **Status zamówienia**
   18. **Konta**
 
-  #### 6.4 Opisy przypadków użycia 
-  _Synchronizacja_
+  ### 6.4 Opisy przypadków użycia 
+  #### Synchronizacja
 
   **Przypadek użycia: Synchronizacja danych między stroną internetową a aplikacją mobilną**
 
@@ -357,7 +353,7 @@
 
   **Warunki końcowe:** Dane użytkownika są zsynchronizowane między aplikacją mobilną a stroną internetową.
 
-  _Powiadomienia_
+  #### Powiadomienia
 
   **Przypadek użycia: Zarządzanie powiadomieniami**
 
@@ -372,7 +368,7 @@
 
   **Warunki końcowe:** Użytkownik ma skonfigurowane powiadomienia zgodnie z własnymi preferencjami.
 
-  _Wielojęzyczność_
+  #### Wielojęzyczność
 
   **Przypadek użycia: Wybór języka interfejsu**
 
@@ -387,7 +383,7 @@
 
   **Warunki końcowe:** Interfejs aplikacji jest wyświetlany w wybranym przez użytkownika języku.
 
-  _Posty_
+  #### Posty
 
   **Przypadek użycia: Dodawanie posta przez usługodawcę**
 
@@ -402,7 +398,7 @@
 
   **Warunki końcowe:** Nowy post usługodawcy jest widoczny na jego profilu dla użytkowników.
 
-  _Recenzja_
+  #### Recenzja
 
   **Przypadek użycia: Dodawanie recenzji przez użytkownika**
 
@@ -417,7 +413,7 @@
 
   **Warunki końcowe:** Recenzja użytkownika jest widoczna na profilu produktu/usługodawcy.
 
-  _Polubienia_
+  #### Polubienia
 
   **Przypadek użycia: Polubienie posta przez użytkownika**
 
@@ -431,7 +427,7 @@
 
   **Warunki końcowe:** Post jest oznaczony jako polubiony przez użytkownika.
 
-  _Zbieranie statystyk_
+  #### Zbieranie statystyk
 
   **Przypadek użycia: Przeglądanie statystyk przez usługodawcę**
 
@@ -446,7 +442,7 @@
 
   **Warunki końcowe:** Usługodawca ma dostęp do zbiorczych statystyk swojej działalności.
 
-  _Kredyty_
+  #### Kredyty
 
   **Przypadek użycia: Wykorzystanie kredytów przez użytkownika**
 
@@ -461,7 +457,7 @@
 
   **Warunki końcowe:** Produkt/usługa zostaje opłacona za pomocą kredytów.
 
-  _Subskrypcje_
+  #### Subskrypcje
 
   **Przypadek użycia: Subskrybowanie usługodawcy przez użytkownika**
 
@@ -476,7 +472,7 @@
 
   **Warunki końcowe:** Użytkownik subskrybuje usługodawcę i otrzymuje częstsze polecenia jego postów.
 
-  _Główna strona użytkownika_
+  #### Główna strona użytkownika
 
   **Przypadek użycia: Wyświetlanie rekomendacji dla użytkownika**
 
@@ -491,7 +487,7 @@
 
   **Warunki końcowe:** Użytkownik ma dostęp do spersonalizowanych rekomendacji na swojej głównej stronie.
 
-  _Wyszukiwanie_
+  #### Wyszukiwanie
 
   **Przypadek użycia: Wyszukiwanie usługodawców lub dań/diet**
 
@@ -507,7 +503,7 @@
 
   **Warunki końcowe:** Użytkownik znajduje poszukiwany produkt/usługodawcę na podstawie wprowadzonych kryteriów.
 
-  _Zamówienia_
+  #### Zamówienia
 
   **Przypadek użycia: Składanie zamówienia przez użytkownika**
 
@@ -523,7 +519,7 @@
 
   **Warunki końcowe:** Zamówienie zostaje złożone i przekazane do realizacji.
 
-  _Historia_
+  #### Historia
 
   **Przypadek użycia: Przeglądanie historii zamówień przez użytkownika**
 
@@ -538,7 +534,7 @@
 
   **Warunki końcowe:** Użytkownik ma dostęp do historii swoich zamówień oraz subskrypcji.
 
-  _Wystawianie produktów_
+  #### Wystawianie produktów
 
   **Przypadek użycia: Dodawanie produktu przez usługodawcę**
 
@@ -553,7 +549,7 @@
 
   **Warunki końcowe:** Nowy produkt jest dostępny do zakupu dla użytkowników.
 
-  _Płatności_
+  #### Płatności
 
   **Przypadek użycia: Dokonywanie płatności przez użytkownika**
 
@@ -568,7 +564,7 @@
 
   **Warunki końcowe:** Zamówienie jest opłacone, a produkty są przygotowane do dostawy.
 
-  _Konto premium_
+  #### Konto premium
 
   **Przypadek użycia: Zakup konta premium przez użytkownika**
 
@@ -583,7 +579,7 @@
 
   **Warunki końcowe:** Użytkownik ma aktywowane konto premium i korzysta z jego dodatkowych funkcji.
 
-  _Status zamówienia_
+  #### Status zamówienia
 
   **Przypadek użycia: Sprawdzanie statusu zamówienia przez użytkownika**
 
@@ -597,7 +593,7 @@
 
   **Warunki końcowe:** Użytkownik ma aktualną informację o statusie swojego zamówienia.
 
-  _Konta_
+  #### Konta
 
   **Przypadek użycia: Zarządzanie kontami**
 
@@ -611,16 +607,16 @@
 
   **Warunki końcowe:** Administrator skutecznie zarządza kontami na platformie.
 
-### VII. Słownik Dziedziny 
-  #### 7.1 Terminologia biznesowa
+## VII. Słownik Dziedziny 
+  ### 7.1 Terminologia biznesowa
   **usługodawca** - firma kateringowa <br>
   **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
   **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
 
-  #### 7.2 Terminologia techniczna
+  ### 7.2 Terminologia techniczna
   **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
 
-  #### 7.3 Terminologia użytkownicza
+  ### 7.3 Terminologia użytkownicza
   **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
   **recenzja** - opinia użytkownika na temat dania lub usługodawcy <br>
   **rodzaj diety** - wyłącznie nazwa <br>
