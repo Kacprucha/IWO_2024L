@@ -1,7 +1,7 @@
 # Raport dot. Przypadków Użycia w Systemie
 *autorzy: Wojciech Szade i Szymon Kopańko*
 
-#### 6.3 Lista Przypadków Użycia
+### 6.3 Lista Przypadków Użycia
 
 1. **Synchronizacja**
 2. **Powiadomienia**
@@ -22,9 +22,9 @@
 17. **Status zamówienia**
 18. **Konta**
 
-#### 6.4 Opis Przypadków Użycia
+### 6.4 Opis Przypadków Użycia
 
-##### Synchronizacja
+#### Synchronizacja
 
 **Przypadek użycia: Synchronizacja danych między stroną internetową a aplikacją mobilną**
 
@@ -39,7 +39,7 @@
 
 **Warunki końcowe:** Dane użytkownika są zsynchronizowane między aplikacją mobilną a stroną internetową.
 
-##### Powiadomienia
+#### Powiadomienia
 
 **Przypadek użycia: Zarządzanie powiadomieniami**
 
@@ -54,7 +54,7 @@
 
 **Warunki końcowe:** Użytkownik ma skonfigurowane powiadomienia zgodnie z własnymi preferencjami.
 
-##### Wielojęzyczność
+#### Wielojęzyczność
 
 **Przypadek użycia: Wybór języka interfejsu**
 
@@ -69,7 +69,7 @@
 
 **Warunki końcowe:** Interfejs aplikacji jest wyświetlany w wybranym przez użytkownika języku.
 
-##### Posty
+#### Posty
 
 **Przypadek użycia: Dodawanie posta przez usługodawcę**
 
@@ -84,7 +84,7 @@
 
 **Warunki końcowe:** Nowy post usługodawcy jest widoczny na jego profilu dla użytkowników.
 
-##### Recenzja
+#### Recenzja
 
 **Przypadek użycia: Dodawanie recenzji przez użytkownika**
 
@@ -99,7 +99,7 @@
 
 **Warunki końcowe:** Recenzja użytkownika jest widoczna na profilu produktu/usługodawcy.
 
-##### Polubienia
+#### Polubienia
 
 **Przypadek użycia: Polubienie posta przez użytkownika**
 
@@ -113,11 +113,9 @@
 
 **Warunki końcowe:** Post jest oznaczony jako polubiony przez użytkownika.
 
-##### Zbieranie statystyk
+#### Zbieranie statystyk
 
-**Przypadek użycia: Przeglądanie statystyk przez usługodawcę
-
-**
+**Przypadek użycia: Przeglądanie statystyk przez usługodawcę**
 
 **Aktorzy:** Usługodawca
 
@@ -130,7 +128,7 @@
 
 **Warunki końcowe:** Usługodawca ma dostęp do zbiorczych statystyk swojej działalności.
 
-##### Kredyty
+#### Kredyty
 
 **Przypadek użycia: Wykorzystanie kredytów przez użytkownika**
 
@@ -145,7 +143,7 @@
 
 **Warunki końcowe:** Produkt/usługa zostaje opłacona za pomocą kredytów.
 
-##### Subskrypcje
+#### Subskrypcje
 
 **Przypadek użycia: Subskrybowanie usługodawcy przez użytkownika**
 
@@ -160,7 +158,7 @@
 
 **Warunki końcowe:** Użytkownik subskrybuje usługodawcę i otrzymuje częstsze polecenia jego postów.
 
-##### Główna strona użytkownika
+#### Główna strona użytkownika
 
 **Przypadek użycia: Wyświetlanie rekomendacji dla użytkownika**
 
@@ -175,7 +173,7 @@
 
 **Warunki końcowe:** Użytkownik ma dostęp do spersonalizowanych rekomendacji na swojej głównej stronie.
 
-##### Wyszukiwanie
+#### Wyszukiwanie
 
 **Przypadek użycia: Wyszukiwanie usługodawców lub dań/diet**
 
@@ -191,7 +189,7 @@
 
 **Warunki końcowe:** Użytkownik znajduje poszukiwany produkt/usługodawcę na podstawie wprowadzonych kryteriów.
 
-##### Zamówienia
+#### Zamówienia
 
 **Przypadek użycia: Składanie zamówienia przez użytkownika**
 
@@ -207,7 +205,7 @@
 
 **Warunki końcowe:** Zamówienie zostaje złożone i przekazane do realizacji.
 
-##### Historia
+#### Historia
 
 **Przypadek użycia: Przeglądanie historii zamówień przez użytkownika**
 
@@ -222,7 +220,7 @@
 
 **Warunki końcowe:** Użytkownik ma dostęp do historii swoich zamówień oraz subskrypcji.
 
-##### Wystawianie produktów
+#### Wystawianie produktów
 
 **Przypadek użycia: Dodawanie produktu przez usługodawcę**
 
@@ -237,7 +235,7 @@
 
 **Warunki końcowe:** Nowy produkt jest dostępny do zakupu dla użytkowników.
 
-##### Płatności
+#### Płatności
 
 **Przypadek użycia: Dokonywanie płatności przez użytkownika**
 
@@ -252,7 +250,7 @@
 
 **Warunki końcowe:** Zamówienie jest opłacone, a produkty są przygotowane do dostawy.
 
-##### Konto premium
+#### Konto premium
 
 **Przypadek
 
@@ -269,7 +267,7 @@
 
 **Warunki końcowe:** Użytkownik ma aktywowane konto premium i korzysta z jego dodatkowych funkcji.
 
-##### Status zamówienia
+#### Status zamówienia
 
 **Przypadek użycia: Sprawdzanie statusu zamówienia przez użytkownika**
 
@@ -283,7 +281,7 @@
 
 **Warunki końcowe:** Użytkownik ma aktualną informację o statusie swojego zamówienia.
 
-##### Konta
+#### Konta
 
 **Przypadek użycia: Zarządzanie kontami**
 
