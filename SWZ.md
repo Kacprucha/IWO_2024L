@@ -9,10 +9,14 @@
   System integrujący dostawców cateringu. Planowany system powinien umożliwiać integrację usług wielu takich dostawców w jednym miejscu. Dzięki temu możliwe będzie zamawianie posiłków od wielu dostawców w obrębie jednego zamówienia. W szczególności, dotyczy to możliwości łączenia posiłków od różnych dostawców w ramach diet dziennych, tygodniowych, miesięcznych itp.
 
   ### 1.3 Podział pracy na sekcje
+Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowiedzialna.
   - Analitycy Biznesowi:
     - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu*
     - Szymon Ochnio *- 3.3 Wymagania dotyczące wydajności, 3.4 Wymagania dotyczące bezpieczeństwa*
     - Mateusz Sobol *- II Opis Problemu Biznesowego i Celu Projektu*
+    - Angelina Sudenkova
+    - Mateusz Czarnecki
+    - Szymon Kopańko
   - Analitycy Systemowi:
     - Krzysztof Jurkowski *- 5.1 Wizja systemu, 5.2 Lista cech systemu*
     - Mateusz Czarnecki *- 5.2 Lista cech systemu, 5.3 Wymagania dotyczące wydajności*
@@ -29,7 +33,25 @@
     - Igor Kędzierawski
     - Julia Owczarczyk
 
-  Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowiedzialna. **Specjaliści od Dokumentacji** mieli wspólne zadanie **nadzorowania tworzenia dokumentów innych członków** zespołu oraz **utworzenie wspólnego dokumentu** łączącego całość pracy zespołu. Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków zespołu.
+  **Specjaliści od Dokumentacji** mieli wspólne zadanie **nadzorowania tworzenia dokumentów innych członków** zespołu oraz **utworzenie wspólnego dokumentu** łączącego całość pracy zespołu. 
+
+  - Analityk Systemowy i Specjalista od Przypadków Użycia
+  	- Sebastian Pawliński
+  	- Igor Kędzierewski
+  	- Wojtek Szade
+  - Projektant UI
+  	- Karol Zalewski
+  	- Krzysztof Jurkowski
+  	- Filip Sosnowski
+  	- Szymon Rogodziński
+  	- Julia Owczarek 
+  - Deweloper
+  	- Tymoteusz Gryszkalis
+  	- Mateusz Sobol
+  	- Szymon Ochnio
+
+**Deweloprzey** pełnili role akceptacujną oraz konsulantacyjną odpowiednio **Tymoteusz Gryszkalis** do identyfikcji procesów biznesowych, **Mateusz Sobol** do realizacji diagramów BPMN procesów biznesowych i **Szymon Ochnio** do realizacji widoków systemowych. 
+Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków zespołu.
 
 ## II. Opis Problemu Biznesowego i Celu Projektu
 
@@ -73,7 +95,7 @@
   - **Powiadomienia** : Automatyczne powiadomienia dla użytkownika, które mają dotyczyć promocji,nowych ofert,statusu dostawy, zmiany regulaminu. Powiadomienia promocyjne i ofertowe możliwe do wyłączenia.
   - **Wielojęzyczność** : Obecnie działamy tylko na rynku polskim, ale Interfejs ma być wielojęzyczny z dostępnymi językami: Polski, Angielski, Ukraiński.
   - **Posty** : Usługodawcy mają możliwość wstawiania postów na swoje profile. Posty składają się z tekstu, zdjęcia i hasztagów, użytkownicy mogą reagować z postami poprzez dawanie polubień.
-  - **Recenzja** : Recenzje mogą wystawiać użytkownicy pod konkretnymi daniami i dietami usługodawcy, jeśli zostały one zakupione przez nich lub pod konkretnym usługodawcą. Recenzje składają się z tekstu i oceny w skali 5 gwiazdek. Inni użytkownicy mogą reagować na recenzję lajkami.
+  - **Recenzja** : Recenzje mogą wystawiać użytkownicy pod konkretnymi daniami, dietami usługodawcy oraz samym usługodawcą. Recenzja może zostać wystawiona po odebraniu danie/dieta lub pod konkretnym usługodawcą. Recenzje składają się z tekstu i oceny w skali 5 gwiazdek. Inni użytkownicy mogą reagować na recenzję lajkami.
   - **Polubienia** : Użytkownik może zostawiać polubienia pod postami, daniami co wpływa na jego przyszłe rekomendacje.
   - **Zbieranie statystyk** : Usługodawcy mogą zobaczyć statystyki swoich postów, dań i diet takie jak polubienia, recenzje, ilość zakupów, mapę z podziałem na regiony z ilością zakupów z danego regionu.
   - **Kredyty** : Kredyty są przyznawane jako rekompensata w wyniku problemów z dostawą bądź z dostarczonym produktem. Odpowiadają one bezpośrednio pieniądzom, można za nie kupić inne produkty, jeśli problem był po stronie usługodawcy, uzyskane kredyty można użyć tylko do zakupu jego produktów, jeśli problem nie był po stronie usługodawcy kredyty można wykorzystać do zakupu dowolnego produktu.
@@ -82,11 +104,12 @@
   - **Wyszukiwanie** : Użytkownicy mają dostęp do wyszukiwarki usługodawców i wyszukiwarki dań/diet. W wyszukiwarce można ustawić filtry i sortować wyszukiwanie po takich parametrach jak nazwa, cena, zawartość składników.
   - **Zamówienia** : Użytkownicy mogą dodać do koszyka zamówień różne dania od różnych usługodawców i będą one dostarczone do niego razem w ramach jednego zamówienia. Może także wykupić subskrypcję konkretnej diety usługodawcy, która będzie będzie automatycznie ściągać pieniądze z konta użytkownika. Subskrypcję przyjmują postać dziennych, tygodniowych lub miesięcznych. Po zakupie subskrypcji na dietę, odpowiednie dania będą dostarczane do użytkownika o określonych porach dnia.
   - **Historia** : Użytkownik ma możliwość zobaczenia historii zamówień oraz listę subskrypcji, która ma opłacone.  Zamówienia, które mają zostać dostarczone w czasie większym niż 24 godziny, mogą zostać anulowane.
-  - **Wystawianie produktów** : Usługodawca może wystawić do sprzedaży konkretne danie, które jest sprzedawane i dostarczane o wybranej przez użytkownika porze dnia lub dietę, która jest w modelu subskrypcyjnym na dzień, tydzień lub miesiąc. Użytkownik może tylko zakupić daną subskrypcje, nie może nic w niej zmieniać. Każde danie, które jest dostarczane, też te w ramach diety, ma opisaną zawartość poprzez składniki.
+  - **Pobieranie produktów** : konkretne danie/diety, które są sprzedawane w aplikacji są pobierane bezpośrednio ze strony usługodawcy. Gdy użytkownik zamawia danie może wybrać godzinę dostarczenia lub w przypadku dietu, która jest w modelu subskrypcyjnym wyiera okres subskrypcji na dzień, tydzień lub miesiąc. Użytkownik może tylko zakupić daną subskrypcje, nie może nic w niej zmieniać. Każde danie, które jest dostarczane, też te w ramach diety, ma opisaną zawartość poprzez składniki.
   - **Płatności** : Użytkownik może dokonywać płatności za pomocą blika, kraty, kredytu.
   - **Konto premium** : Użytkownik może zakupić konto premium dające mu darmowe dostawy.
   - **Status zamówienia** : Użytkownik może podejrzeć status zamówień mówiący na jakim etapie dostarczania jest zamówienie.
   - **Konta** : Występują 3 rodzaje kont: usługodawca, użytkownik, admin.
+  - **Różne tryby aplikacji** : aplikacja ma być dostępna w dwóch trybach jasnym i ciemnym.
 
   ### 3.3 Wymagania dotyczące wydajności 
   - **Zapewnienie użytkownikom szybkiego dostępu do aplikacji**
@@ -154,25 +177,24 @@
   ### 5.2 Lista cech systemu
   * System składa się z 3 części: aplikacji PWA, web api i bazy danych.
   * System zapewnia takie same funkcjonalności niezależnie od platformy (web/mobilna).
-  * System jest dostępny 24/7.
+  * System jest dostępny 24/7. Zastrzegamy sobie jako firma 20 dni w roku na naprawy serwisowe, w których aplikacja może być nie aktywan.
   * System jest skalowalny, nie przestaje działać nawet przy skokowym wzroście odwiedzeń strony.
   * System jest dostępny w wielu językach oraz pamięta preferencje językowe użytkownika.
-  * System oferuje wysyłanie powiadomień do użytkownika zarówno o dostawach jak i promocjach.
-  * System umożliwia wyłączenie powiadomień.
+  * System oferuje wysyłanie powiadomień do użytkownika o dostawach, promocjach, zmianach w regulaminie czy o informacjach w zmianach funcjonowaniu oprogramowania.
+  * System umożliwia wyłączenie niektórych powiadomień.
   * System bezpiecznie przechowuje wrażliwe dane użytkowników.
   * System pozwala użytkownikowi na usunięcie swoich danych zgodnie z RODO.
-  * System obsługuje płatności blikiem i kartą kredytową/debetową. 
+  * System obsługuje płatności blikiem i kartą kredytową/debetową lub za pomocą kredytów. 
 
-  * System umożliwia firmie kateringowej zarządzać swoją ofertą.
-  * System umożliwia firmie kateringowej publikować aktualizacje i reklamy w formie postów.
+  * System umożliwia firmie kateringowej publikować aktualizacje i reklamy w formie postów - 5 dziennie.
   * System umożliwia firmie kateringowej przeglądanie statystyk (reakcje użytkowników na posty, wyświetlenia, przychód z aplikacji) .
   * System umożliwia użytkownikowi przeglądanie oferty wielu firm kateringowych.
   * System umożliwia użytkownikowi przeglądanie i reagowanie na posty usługodawców (firm kateringowych).
   * System umożliwia użytkownikowi składanie zamówień.
   * System umożliwia użytkownikowi opłacanie zamówień poprzez kredyt, blik oraz kartę debetową/kredytową.
-  * System umożliwia użytkownikowi doładowanie swojego kredytu poprzez blik lub kartę debetową/kredytową.
+  * System umożliwia użytkownikowi doładowanie kredytu użytkowniak w ramach rekompensaty za nie dostarczone produkty (kredyt na dowolnego usługodawcę) lub odwołane zamówienie (kredyt na konkretnego usługodawcę).
   * System umożliwia użytkownikowi anulowanie swojego zamówienia do 24 godzin przed planowanym dostarczeniem.
-  * System proponuje użytkownikowi rekomendowane oferty na podstawie jego poprzednich zamówień.
+  * System proponuje użytkownikowi rekomendowane oferty na podstawie jego poprzednich zamówień oraz zasubskrybowanych firmach kateringowych.
   * System pozwala użytkownikowi wyszukiwać oferty po:
     * dostawcy
     * nazwie dania
@@ -185,7 +207,7 @@
     * diecie
     * alergenach
   * System pozwala użytkownikowi na dodawanie dań do ulubionych.
-  * System pozwala użytkownikowi na wystawienie recenzji nt. dania i usługi do miesiąca po wykonaniu zamówienia.
+  * System pozwala użytkownikowi na wystawienie recenzji nt. dania i usługi lub usługodawcę do miesiąca po wykonaniu zamówienia.
   * System pozwala użytkownikowi na przeglądanie recenzji produktów i reagowanie na nie.
   * System umożliwia użytkownikowi przeglądanie historii swoich zamówień.
   * System umożliwia użytkownikowi na przeglądanie statusu dzisiejszych zamówień.
@@ -229,7 +251,7 @@
     - **Możliwy wynik pomiaru:** Skuteczność mechanizmów obronnych powinna być blisko maksymalej wartości (minimum 99%). Potwierdzenie, że system w pełni stosuje bezpieczne i niezawodne uwierzytelnianie i autoryzację użytkowników.
     - **Oczekiwane wartości:** Autoryzacja i uwierzytelnienie w systemie są w pełni bezpieczne, oparte na silnych mechanizmach i zgodne z obowiązującymi standardami bezpieczeństwa.
   - **System musi mieć zdefiniowane role dostępu**
-    - **Opis:** W systemie muszą być zdefiniowane klarowne role dostępu, przypisane do różnych kategorii użytkowników (użytkownik, dostawca, administrator), z odpowiednimi uprawnieniami dostępu (Access Management). Interakcje z zasobami systemu muszą być ściśle kontrolowane w zależności od przypisanych uprawnień i ról.
+    - **Opis:** W systemie muszą być zdefiniowane klarowne role dostępu, przypisane do różnych kategorii użytkowników (użytkownik, usługodawcy, administrator), z odpowiednimi uprawnieniami dostępu (Access Management). Interakcje z zasobami systemu muszą być ściśle kontrolowane w zależności od przypisanych uprawnień i ról.
     - **Sposób pomiaru:** Testy w ramach różnych zasobów, które sprawdzą skuteczność mechanizmów zarządzania dostępem w kontekście różnych ról użytkowników. 
     - **Możliwy wynik pomiaru:**  Osiągnięcie 100% udanych prób dostępu do zasobów zgodnych z przydzielonymi uprawnieniami oraz 100% nieudanych prób, kiedy użytkownik nie ma wymaganych uprawnień.
     - **Oczekiwane wartości:** System zapewnia skuteczne zarządzanie dostępem, eliminując dostęp do zasobów dla użytkowników bez wymaganych uprawnień.
@@ -286,11 +308,12 @@
   - Aplikacja webowa:
   Aplikacja ma oferować te same funkcjonalności oraz wyglądać identycznie w podanych przeglądarkach:
     - Google Chrome
-	  - Firefox
-	  - Opera
-	  - Safari
+    - Firefox
+    - Opera
+    - Safari
+    - Edge
   - Aplikacja mobilna:
-  Aplikacja musi działać w systemach Android od wersji 10 oraz w systemie IOS od wersji 11.
+  Aplikacja musi działać w systemach Android od wersji 10 (81,3% urządzeń na rynku) oraz w systemie IOS od wersji 11 (99% urządzeń na rynku).
   Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla każdych z platform.
 
 ## VI. Opracowanie i dokumentowanie przypadków użycia
@@ -312,10 +335,10 @@
 
   ### 6.2 Identyfikacja aktorów
   - **Użytkownicy aplikacji webowej i mobilnej**: Użytkownicy są zainteresowani minimalnym czasem ładowania aplikacji oraz otrzymywaniem szybkich odpowiedzi na swoje zapytania. Są również zainteresowani otrzymywaniem natychmiastowych powiadomień. Oczekują, że system będzie szyfrował wszystkie dane przesyłane przez niego i przechowywane w nim, aby ich dane osobowe były bezpieczne. Oczekują także, że system będzie w stanie szybko i efektywnie przywracać się do poprawnego stanu po wystąpieniu awarii, oraz zapewniał skuteczne mechanizmy monitorowania aktywności oraz raportowania wszelkich nieprawidłowości. Muszą być informowani o przerwach serwisowych z odpowiednim wyprzedzeniem. Muszą też być świadomi, że w przypadku awarii systemu, aplikacja automatycznie przechodzi na backupowe środowisko, aby minimalizować przestoje. Oczekują, że aplikacja będzie działać zgodnie z tą specyfikacją, zapewniając spójne doświadczenie użytkownika na wszystkich platformach.
-  - **Dostawcy**: Dostawcy korzystają z systemu w celu dostarczania usług lub towarów. Są zainteresowani skalowalnością systemu oraz szybkim przetwarzaniem płatności za zamówienia.
+  - **Usługodawcy**: Usługodawcy korzystają z systemu w celu dostarczania usług lub towarów. Są zainteresowani skalowalnością systemu oraz szybkim przetwarzaniem płatności za zamówienia.
   - **Administratorzy systemu**: Administratorzy mają dostęp do zaawansowanych funkcji systemowych i są odpowiedzialni za zarządzanie rolami dostępu, monitorowanie aktywności, oraz zapewnianie bezpieczeństwa systemu. Administratorzy muszą skutecznie monitorować aktywność, rejestrując istotne operacje i zdarzenia w systemie. Ponadto muszą zarządzać mechanizmami zapobiegającymi utracie danych, takimi jak regularne backupy i przywracanie danych, oraz definiować klarowne i skuteczne zarządzanie dostępem do zasobów, oparte na zdefiniowanych rolach i uprawnieniach. Administratorzy muszą zaplanować przerwy serwisowe, które muszą być komunikowane użytkownikom z trzydniowym wyprzedzeniem. Ponadto, w przypadku awarii systemu, administratorzy muszą zapewnić automatyczne przejście aplikacji na backupowe środowisko w celu minimalizacji przestojów.
   - **Potencjalni atakujący**: Aktorzy ci mogą próbować atakować system w celu uzyskania nieautoryzowanego dostępu do danych lub uszkodzenia systemu. System musi być zaprojektowany w taki sposób, aby skutecznie się bronić przed różnymi rodzajami ataków internetowych. Wymagane są skuteczne mechanizmy obronne, takie jak firewall, filtrowanie ruchu czy detekcja anomalii, aby chronić system przed różnorodnymi atakami, takimi jak próby ataków brute force, SQL injection, Cross-Site Request Forgery (CSRF) czy Cross-Site Scripting (XSS).
-  - **Zespół ds. obsługi technicznej**: Wymagane jest, aby zespół ds. obsługi technicznej monitorował i zarządzał przerwami serwisowymi oraz awariami systemu, zapewniając minimalizację przestojów i zapewniając, że procedury planowane są zgodnie z wymaganiami. Wymagane jest, aby system posiadał skuteczny system zarządzania błędami, który umożliwia szybkie wykrywanie, raportowanie i naprawę błędów. Ponadto, zespół ds. obsługi technicznej musi mieć dokumentowany plan awaryjny, który określa kroki do podjęcia w przypadku poważnych awarii, oraz regularnie przechodzić testy odpornościowe pod obciążeniem i w warunkach ekstremalnych.
+  - **Zespół ds. obsługi technicznej**: Wymagane jest, aby zespół ds. obsługi technicznej monitorował i zarządzał przerwami serwisowymi oraz awariami systemu, zapewniając minimalizację przestojów i zapewniając, że procedury planowane są zgodnie z wymaganiami. Wymagane jest, aby system posiadał skuteczny system zarządzania błędami, który umożliwia szybkie wykrywanie, raportowanie i naprawę błędów. Ponadto, zespół ds. obsługi technicznej musi mieć dokumentowany plan awaryjny, który określa kroki do podjęcia w przypadku poważnych awarii, oraz regularnie przechodzić symulacje awarii pod presją czasu i w warunkach ekstremalnych.
 
   ### 6.3 Lista przypadków użycia
   1. **Synchronizacja**
@@ -326,16 +349,16 @@
   6. **Polubienia**
   7. **Zbieranie statystyk**
   8. **Kredyty**
-  9. **Subskrypcje**
+  9. **Subskrypcje konta usługodawcy**
   10. **Główna strona użytkownika**
   11. **Wyszukiwanie**
   12. **Zamówienia**
   13. **Historia**
-  14. **Wystawianie produktów**
-  15. **Płatności**
-  16. **Konto premium**
-  17. **Status zamówienia**
-  18. **Konta**
+  14. **Płatności**
+  15. **Konto premium**
+  16. **Status zamówienia**
+  17. **Konta**
+  18. **Subskrypcja diety**
 
   ### 6.4 Opisy przypadków użycia 
   #### Synchronizacja
@@ -444,11 +467,11 @@
 
   #### Kredyty
 
-  **Przypadek użycia: Wykorzystanie kredytów przez użytkownika**
+  **Przypadek użycia: Wykorzystanie kredytów ogólnych przez użytkownika**
 
   **Aktorzy:** Użytkownik
 
-  **Warunki początkowe:** Użytkownik posiada kredyty na swoim koncie.
+  **Warunki początkowe:** Użytkownik posiada kredyty ogólne na swoim koncie.
 
   **Opis:**
     1. Użytkownik dokonuje zakupu produktu/usługi.
@@ -457,7 +480,7 @@
 
   **Warunki końcowe:** Produkt/usługa zostaje opłacona za pomocą kredytów.
 
-  #### Subskrypcje
+  #### Subskrypcje konta usługodawcy
 
   **Przypadek użycia: Subskrybowanie usługodawcy przez użytkownika**
 
@@ -534,21 +557,6 @@
 
   **Warunki końcowe:** Użytkownik ma dostęp do historii swoich zamówień oraz subskrypcji.
 
-  #### Wystawianie produktów
-
-  **Przypadek użycia: Dodawanie produktu przez usługodawcę**
-
-  **Aktorzy:** Usługodawca
-
-  **Warunki początkowe:** Usługodawca jest zalogowany na swoje konto.
-
-  **Opis:**
-    1. Usługodawca przechodzi do opcji wystawiania nowego produktu.
-    2. Wpisuje dane produktu, takie jak nazwa, opis, cena.
-    3. Potwierdza dodanie produktu.
-
-  **Warunki końcowe:** Nowy produkt jest dostępny do zakupu dla użytkowników.
-
   #### Płatności
 
   **Przypadek użycia: Dokonywanie płatności przez użytkownika**
@@ -559,7 +567,7 @@
 
   **Opis:**
     1. Użytkownik przechodzi do opcji płatności.
-    2. Wybiera preferowany sposób płatności: blikiem, kartą, kredytem.
+    2. Wybiera preferowany sposób płatności: blikiem, kartą.
     3. Potwierdza dokonanie płatności.
 
   **Warunki końcowe:** Zamówienie jest opłacone, a produkty są przygotowane do dostawy.
@@ -607,14 +615,46 @@
 
   **Warunki końcowe:** Administrator skutecznie zarządza kontami na platformie.
 
+  #### Subskrypcja diety
+
+  **Przypadek użycia: Założenie przez użytkownika subksrypcji na dietę**
+
+  **Aktorzy:** Użytkownik
+
+  **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto.
+
+  **Opis:**
+    1. Użytkownik wybiera interesującą go ofertę diety.
+    2. System wyśwetla użytkownikowi formularz subskrypcji.
+    3. Użytkownik wybiera okres subskrypcji: dzień, tydzień, miesiąc.
+    4. System przekierowuje użytkownika do formularza płatności
+    5. Użytkownik wybiera opcję dostawy i płatności.
+    6. System wyświetla dane subskrypcji.
+    7. Użytkownik akcpetuje dokonanie subskrypcji.
+
+  **Warunki końcowe:** Subskrypcja zostaje złożone i zapisana do ponownej realizacji w określonym czasie.
+
 ## VII. Słownik Dziedziny 
   ### 7.1 Terminologia biznesowa
   **usługodawca** - firma kateringowa <br>
+  **użytkownik** - osoba zakupująca posiłki/diety w aplikacji <br>
   **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
   **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
+  **system** - aplikacja która powstaje 
 
   ### 7.2 Terminologia techniczna
   **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
+  **PWA** - progresywna aplikacja webowa stworzona w technologii, która pozwala uzyskać wrażenie, że tak przygotowana strona internetowa działa jak natywna aplikacja <br>
+  **hashtag** - służy do oznaczania treści (wpisów, zdjęć), aby łatwiej można je było wyszukiwać <br>
+  **zapytania użytkownika** - żądanie przesłane przez użytkownika do serwera internetowego w celu uzyskania określonych informacji, treści lub usług <br>
+  **szyforwanie danych** - zapisywanie danych wykorzystywanych przez system w sposób niejawny, aby wyciek z bazy danych nie spowodował ujawnienia informacji tam zapisanych <br>
+  **SQL injection** - technika ataku polegająca na wykorzystaniu luk w zabezpieczeniach aplikacji internetowej, które pozwalają na wstrzyknięcie złośliwego kodu SQL (Structured Query Language) do zapytań SQL wysyłanych do bazy danych przez aplikację <br>
+  **XSS** - Cross-Site Scripting to technika ataku polegająca na wstrzyknięciu złośliwego skryptu (najczęściej JavaScript) do treści strony internetowej lub danych przesyłanych do użytkownika przez aplikację internetową <br>
+  **CSRF** - Cross-Site Request Forgery to technika ataku, w której atakujący zmusza użytkownika do wykonania niechcianych działań na stronie internetowej, na którą jest zalogowany. Atak ten polega na wykorzystaniu zaufania przeglądarki do wywołania żądania HTTP w imieniu zalogowanego użytkownika, zazwyczaj poprzez przekierowanie go na złośliwą stronę <br>
+  **DDoS** - Distributed Denial of Service to rodzaj ataku, w którym wielka ilość złośliwego ruchu sieciowego jest kierowana na konkretny serwer, stronę internetową lub usługę online w celu spowodowania niedostępności dla prawidłowych użytkowników <br>
+  **Brute Force** -  technika ataku, która polega na próbie odgadnięcia hasła, klucza szyfrowania lub innej tajnej wartości poprzez wypróbowanie wszystkich możliwych kombinacji <br>
+  **testy odpornościowe** - to rodzaj testów oprogramowania, który ma na celu ocenę zdolności systemu informatycznego do radzenia sobie z nieprzewidywalnymi i niespodziewanymi sytuacjami oraz przywrócenia normalnego działania po wystąpieniu awarii lub zakłóceń <br>
+  **backup** - kopia zapasowych danych wykonywana w celu ich zabezpieczenia przed utratą, uszkodzeniem lub nieautoryzowanym dostępem <br>
 
   ### 7.3 Terminologia użytkownicza
   **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
