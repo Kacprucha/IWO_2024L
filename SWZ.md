@@ -11,10 +11,10 @@
   ### 1.3 Podział pracy na sekcje
 Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowiedzialna.
   - Analitycy Biznesowi:
-    - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu*
+    - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu, 7.1 Identyfikacaj procesów biznesowych*
     - Szymon Ochnio *- 3.3 Wymagania dotyczące wydajności, 3.4 Wymagania dotyczące bezpieczeństwa*
     - Mateusz Sobol *- II Opis Problemu Biznesowego i Celu Projektu*
-    - Angelina Sudenkova
+    - Angelina Sudenkova *- 7.1 Identyfikacaj procesów biznesowych*
     - Mateusz Czarnecki
     - Szymon Kopańko
   - Analitycy Systemowi:
@@ -40,11 +40,11 @@ Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowied
   	- Igor Kędzierewski
   	- Wojtek Szade
   - Projektant UI
-  	- Karol Zalewski
+  	- Karol Zalewski *- 8.1 Ustalenia dotyczące wyglądu UI*
   	- Krzysztof Jurkowski
   	- Filip Sosnowski
   	- Szymon Rogodziński
-  	- Julia Owczarek 
+  	- Julia Owczarczyk
   - Deweloper
   	- Tymoteusz Gryszkalis
   	- Mateusz Sobol
