@@ -677,18 +677,26 @@ Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków ze
   System w czasie monitorowania aktywności wykrywa nieprawidłowość wysyła wiadomośc do Zespół ds. obsługi technicznej. Zespół ds. obsługi technicznej dokonuje analizy zagrożeń dotyczących błędu. Jeśli błąd nie niesie ze sobą zagrożeń przechodzą do naprawy błędu. dokonuje naprawę po czym sprawdzają błąd został wyeliminowany i jeśli naprawa się nie powiodła ponownie dokonują naprawę, jeśli błąd wiąże się z zagrożeniami wycieku danych odpowiednie systemy są blokowane i Zespół ds. obsługi technicznej dokonuje naprawę po czym sprawdzają błąd został wyeliminowany i jeśli naprawa się nie powiodła ponownie dokonują naprawę , jeśli naprawa się powiodła Zespół ds. obsługi technicznej przywraca zablokowane części systemu.
 
 ## VII. UI
-  ### 8.1
+  ### 8.1 Ustalenia dotyczące wyglądu UI
+  Po ustaleniach z klientem ustaliliśmy wstępną wizję odnoszącą się do topoligi projektu wizualnego aplikacji:
+  - rodzaje czcionek używanych w projekcie
+  - paleta kolorów używana w projekcie 
 
+  Jeśli chodzi ogólny styl i wygląd aplikacji klijent zaproponował inspirować się już istniejącymi aplikacjiami działających w podobnej branży np.: Glovo czy Wolt.
+  Zatem navbar może zawierać logo, wyszukiwarkę, przyciski logowania/wylogowania, profilu użytkownika, historii zamówień itp.
+  Na stronie głównej powinno być wyświetlane najpopularniejsze oferty, rodzaje jedzenia, rodzaje dostawców, różne kuchnie.
+  Na dole strony powinna zawierać się stopka zwierające regulamin, dane kontaktowe itp.
+  Na razie są to ustalenia wstępne i klijent pozwolił na dowolność zepołowi designerskiemu. Ewntualne uwagi będą już zwracane do konkretnych widoków. 
 
-## VII. Słownik Dziedziny 
-  ### 7.1 Terminologia biznesowa
+## IX. Słownik Dziedziny 
+  ### 9.1 Terminologia biznesowa
   **usługodawca** - firma kateringowa <br>
   **użytkownik** - osoba zakupująca posiłki/diety w aplikacji <br>
   **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
   **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
   **system** - aplikacja która powstaje 
 
-  ### 7.2 Terminologia techniczna
+  ### 9.2 Terminologia techniczna
   **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
   **PWA** - progresywna aplikacja webowa stworzona w technologii, która pozwala uzyskać wrażenie, że tak przygotowana strona internetowa działa jak natywna aplikacja <br>
   **hashtag** - służy do oznaczania treści (wpisów, zdjęć), aby łatwiej można je było wyszukiwać <br>
@@ -702,7 +710,7 @@ Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków ze
   **testy odpornościowe** - to rodzaj testów oprogramowania, który ma na celu ocenę zdolności systemu informatycznego do radzenia sobie z nieprzewidywalnymi i niespodziewanymi sytuacjami oraz przywrócenia normalnego działania po wystąpieniu awarii lub zakłóceń <br>
   **backup** - kopia zapasowych danych wykonywana w celu ich zabezpieczenia przed utratą, uszkodzeniem lub nieautoryzowanym dostępem <br>
 
-  ### 7.3 Terminologia użytkownicza
+  ### 9.3 Terminologia użytkownicza
   **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
   **recenzja** - opinia użytkownika na temat dania lub usługodawcy <br>
   **rodzaj diety** - wyłącznie nazwa <br>
