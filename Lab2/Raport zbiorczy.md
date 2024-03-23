@@ -351,40 +351,40 @@ iania recenzji danego produktu.
 
 *konsultacje i akcpetacja: Mateusz Sobol*
 
-![Synchronizacja danych](../Lab2/zdjecia/Synchronizacja%20danych.png)
+![Synchronizacja danych](../Lab2/zdjecia/Synchronizacja%20danych.png) <br>
 *Autor: Mateusz Czarnecki*
 
-![Aktualizacja produktów](../Lab2/zdjecia/Aktualizcja%20produktów.png)
+![Aktualizacja produktów](../Lab2/zdjecia/Aktualizcja%20produktów.png) <br>
 *Autor: Mateusz Czarnecki*
 
-![Dodawanie postów](../Lab2/zdjecia/Dodawanie%20postów.png)
+![Dodawanie postów](../Lab2/zdjecia/Dodawanie%20postów.png) <br>
 *Autor: Mateusz Czarnecki*
 
-![Proces dodawani promocji](../Lab2/zdjecia/Proces%20dodawania%20promocji.png)
+![Proces dodawani promocji](../Lab2/zdjecia/Proces%20dodawania%20promocji.png) <br>
 *Autor: Szymon Kopańko*
 
-![Proces dostawy](../Lab2/zdjecia/Proces%20dostawy.png)
+![Proces dostawy](../Lab2/zdjecia/Proces%20dostawy.png) <br>
 *Autor: Szymon Kopańko*
 
-![Proces wystawiania recenzji](../Lab2/zdjecia/Proces%20wystawianie%20recenizji.png)
+![Proces wystawiania recenzji](../Lab2/zdjecia/Proces%20wystawianie%20recenizji.png) <br>
 *Autor: Szymon Kopańko*
 
-![Wykorzystanie kredytów](../Lab2/zdjecia/Wykorzystanie%20kredytów.png)
+![Wykorzystanie kredytów](../Lab2/zdjecia/Wykorzystanie%20kredytów.png) <br>
 *Autor: Igor Kędzierewski*
 
-![Dokonanie płatności](../Lab2/zdjecia/Dokonanie%20płatności.png)
+![Dokonanie płatności](../Lab2/zdjecia/Dokonanie%20płatności.png) <br>
 *Autor: Igor Kędzierewski*
 
-![Rezygnacja z zakupu](../Lab2/zdjecia/Rezygnacjia%20z%20zakupu.png)
+![Rezygnacja z zakupu](../Lab2/zdjecia/Rezygnacjia%20z%20zakupu.png) <br>
 *Autor: Igor Kędzierewski*
 
-![Przyznywanie kredytu](../Lab2/zdjecia/Przyznanie%20kredytów%20jako%20rekompensata.png)
+![Przyznywanie kredytu](../Lab2/zdjecia/Przyznanie%20kredytów%20jako%20rekompensata.png) <br>
 *Autor: Sebastian Pawliński*
 
-![Utrzymywanie systemu](../Lab2/zdjecia/Utrzymywanie%20systemu.png)
+![Utrzymywanie systemu](../Lab2/zdjecia/Utrzymywanie%20systemu.png) <br>
 *Autor: Sebastian Pawliński*
 
-![Reakcja na ataki/błędy](../Lab2/zdjecia/Reakcja%20na%20ataki.png)
+![Reakcja na ataki/błędy](../Lab2/zdjecia/Reakcja%20na%20ataki.png) <br>
 *Autor: Sebastian Pawliński*
 
 ## Ustalenia dotyczące wyglądu UI
@@ -407,31 +407,31 @@ Na razie są to ustalenia wstępne i klijent pozwolił na dowolność zepołowi 
 
 *konsultacje i akcpetacja: Mateusz Sobol*
 
-![Ustawienia i historia](../Lab2/Widoki%20UI/Widok%20ustawien%20i%20historii%20zamowien.png)
+![Ustawienia i historia](../Lab2/Widoki%20UI/Widok%20ustawien%20i%20historii%20zamowien.png) <br>
 *Autor: Szymon Rogodziński*
 
-![Logowanie użytkownika](../Lab2/Widoki%20UI/Widok%20logowania%20użytkownika.png)
+![Logowanie użytkownika](../Lab2/Widoki%20UI/Widok%20logowania%20użytkownika.png) <br>
 *autor: Krzysztof Jurkowski*
 
-![Rejestracjia usługodawcy](../Lab2/Widoki%20UI/Widok%20rejestracji%20dostawcy.png)
+![Rejestracjia usługodawcy](../Lab2/Widoki%20UI/Widok%20rejestracji%20dostawcy.png) <br>
 *autor: Krzysztof Jurkowski*
 
-![Rejestracjia użytkownika](../Lab2/Widoki%20UI/Widok%20rejestracji%20użytkownika.png)
+![Rejestracjia użytkownika](../Lab2/Widoki%20UI/Widok%20rejestracji%20użytkownika.png) <br>
 *autor: Krzysztof Jurkowski*
 
-![Rejestracjia](../Lab2/Widoki%20UI/Widok%20rejestracji.png)
+![Rejestracjia](../Lab2/Widoki%20UI/Widok%20rejestracji.png) <br>
 *autor: Krzysztof Jurkowski*
 
-![Panel główny](../Lab2/Widoki%20UI/Panel%20główny.png)
+![Panel główny](../Lab2/Widoki%20UI/Panel%20główny.png) <br>
 *autor: Filip Sosonowski*
 
-![Panel powitalny](../Lab2/Widoki%20UI/Panel%20powitlany.png)
+![Panel powitalny](../Lab2/Widoki%20UI/Panel%20powitlany.png) <br>
 *autor: Karol Zalewski*
 
-![Panel wyszukiwania 1](../Lab2/Widoki%20UI/Panel%20wyszukiwania%201.png)
+![Panel wyszukiwania 1](../Lab2/Widoki%20UI/Panel%20wyszukiwania%201.png) <br>
 *autor: Julia Owczarczyk*
 
-![Panel wyszukiwania 2](../Lab2/Widoki%20UI/Panel%20wyszukiwania%202.png)
+![Panel wyszukiwania 2](../Lab2/Widoki%20UI/Panel%20wyszukiwania%202.png) <br>
 *autor: Julia Owczarczyk*
 
 ## Pomoc w realizacji widoków - uwagi do widoków
