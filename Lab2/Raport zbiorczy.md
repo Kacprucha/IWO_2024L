@@ -2,7 +2,7 @@
 
 ## Identyfikacaj procesów biznesowych w projekcie 
 
-*autorzy: Angelina Sudenkova, Jakub Wysocki*
+*autorzy: Angelina Sudenkova, Jakub Wysocki* <br>
 *konsultacje i akcpetacja: Tymoteusz Gryszkalis*
 
 ###  Identyfikacaj procesów biznesowych
