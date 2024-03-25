@@ -11,12 +11,13 @@ System integrujący dostawców cateringu. Planowany system powinien umożliwiać
 ### 1.3 Podział pracy na sekcje
 Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowiedzialna.
 - Analitycy Biznesowi:
-  - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu, 7.1 Identyfikacaj procesów biznesowych*
+  - Jakub Wysocki *- 3.1 Ogólne wymagania funkcjonalne, 3.2 Szczegółowe funkcjonalności systemu, 8.1 Identyfikacaj procesów biznesowych*
   - Szymon Ochnio *- 3.3 Wymagania dotyczące wydajności, 3.4 Wymagania dotyczące bezpieczeństwa*
-  - Mateusz Sobol *- II Opis Problemu Biznesowego i Celu Projektu*
-  - Angelina Sudenkova *- 7.1 Identyfikacaj procesów biznesowych*
+  - Mateusz Sobol *- II Opis Problemu Biznesowego i Celu Projektu, 6.4 Opisy przypadków użycia*
+  - Angelina Sudenkova *- 8.1 Identyfikacaj procesów biznesowych*
   - Mateusz Czarnecki
-  - Szymon Kopańko
+  - Szymon Kopańko *- 6.4 Opisy przypadków użycia*
+  - Tymoteusz Gryszkalis
 - Analitycy Systemowi:
   - Krzysztof Jurkowski *- 5.1 Wizja systemu, 5.2 Lista cech systemu*
   - Mateusz Czarnecki *- 5.2 Lista cech systemu, 5.3 Wymagania dotyczące wydajności*
@@ -39,8 +40,13 @@ Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowied
   - Sebastian Pawliński
   - Igor Kędzierewski
   - Wojtek Szade
+  - Jakub Wysocki
+  - Angelina Sudenkova
+  - Karol Zalewski
+  - Julia Owczarek
+  - Krzysztof Jurkowski
 - Projektant UI
-  - Karol Zalewski *- 8.1 Ustalenia dotyczące wyglądu UI*
+  - Karol Zalewski *- 9.1 Ustalenia dotyczące wyglądu UI*
   - Krzysztof Jurkowski
   - Filip Sosnowski
   - Szymon Rogodziński
@@ -50,7 +56,15 @@ Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowied
  	- Mateusz Sobol
  	- Szymon Ochnio
 
-**Deweloprzey** pełnili role akceptacujną oraz konsulantacyjną odpowiednio **Tymoteusz Gryszkalis** do identyfikcji procesów biznesowych, **Mateusz Sobol** do realizacji diagramów BPMN procesów biznesowych i **Szymon Ochnio** do realizacji widoków systemowych. 
+**Deweloprzey** pełnili role akceptacujną oraz konsulantacyjną odpowiednio **Tymoteusz Gryszkalis** do identyfikcji procesów biznesowych, **Mateusz Sobol** do realizacji diagramów BPMN procesów biznesowych i **Szymon Ochnio** do realizacji widoków systemowych. <br>
+**Analitycy Systemowi i Specjaliści od Przypadków Użycia** mieli za zadanie wykonać diagramów BPMN zamieszczonych w odzielnej dokumentacji. <br>
+**Projektancji UI** mieli za zdanie wykonać projekty widoków umiesczone w Figmie oraz w odzielnej dokumentacji.
+
+- Tester
+  - Igor Kędzierewski *- 7.1 Przypadków użycia*
+  - Mateusz Czarnecki *- 7.1 Przypadków użycia*
+  - Szymon Ochnio *- 7.1 Przypadków użycia*
+
 Dodatkowo słownik dziedziny powstawał wspólnie przez każdego z członków zespołu.
 
 ## II. Opis Problemu Biznesowego i Celu Projektu
@@ -386,8 +400,11 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Opis:**
   1. Użytkownik przechodzi do ustawień powiadomień.
-  2. Może zaznaczyć preferowane rodzaje powiadomień, które chce otrzymywać.
-  3. Użytkownik może również wyłączyć powiadomienia, jeśli nie chce ich otrzymywać.
+  2. System wyświetla okno ustawięń powiadomień.
+  3. Użytkownik ,oże zaznaczyć preferowane rodzaje powiadomień, które chce otrzymywać.
+  4. Użytkownik może również wyłączyć powiadomienia, jeśli nie chce ich otrzymywać.
+  5. Użytkownik po dokonaniu zmian może je zapisać.
+  6. System aktualizuje informacje o użytkowniku.
 
 **Warunki końcowe:** Użytkownik ma skonfigurowane powiadomienia zgodnie z własnymi preferencjami.
 
@@ -401,8 +418,9 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Opis:**
   1. Użytkownik przechodzi do ustawień języka.
-  2. Wybiera preferowany język spośród dostępnych opcji: polski, angielski, ukraiński.
-  3. Interfejs aplikacji automatycznie zmienia się na wybrany język.
+  2. System wyświetla okno ustawień języka
+  3. Użytkownik wybiera preferowany język spośród dostępnych opcji: polski, angielski, ukraiński.
+  4. Interfejs aplikacji zmienia się na wybrany język.
 
 **Warunki końcowe:** Interfejs aplikacji jest wyświetlany w wybranym przez użytkownika języku.
 
@@ -417,7 +435,10 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Opis:**
   1. Usługodawca przechodzi do opcji dodawania nowego posta na swoim profilu.
   2. Wpisuje treść posta oraz dodaje zdjęcia i hasztagi.
-  3. Potwierdza dodanie posta.
+  3. Potwierdza dodanie posta. 
+  4. Jeżeli dodanie posta się udało system wyświetla nowy post i zapisuje ją do bazy danych. 
+    1. Jeżeli dodanie posta się nie udało system wyświetla komunikat o błędzie.
+  5. System wysyła powiadomienia o nowym poście odpowiednim użytkownikom.
 
 **Warunki końcowe:** Nowy post usługodawcy jest widoczny na jego profilu dla użytkowników.
 
@@ -430,11 +451,14 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto i posiada zakupiony produkt.
 
 **Opis:**
-  1. Użytkownik przechodzi do opcji wystawienia recenzji.
-  2. Wpisuje tekst recenzji oraz ocenę produktu/usługodawcy w skali 5 gwiazdek.
-  3. Potwierdza dodanie recenzji.
+  1. Użytkownik przechodzi do opcji wystawiania recenzji danego produktu.
+  2. System wyświetla odpowiednie pole do wpisania recenzji
+  3. Uzytkownik wpisuje treść recenzji oraz przyznaje ocenę produktowi.
+  4. Użytownik potwierdza dodanie recenzji. 
+    1. Jeżeli dodanie recenzji się nie udało system wyświetla komunikat o błędzie.
+  5. Jeżeli dodanie recenzji się udało system wyświetla nową recenzje i zapisuje ją do bazy danych.
 
-**Warunki końcowe:** Recenzja użytkownika jest widoczna na profilu produktu/usługodawcy.
+**Warunki końcowe:** Recenzja użytkownika jest widoczna na stronie produktu dla innych użytkowników..
 
 #### Polubienia
 
@@ -445,25 +469,27 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik przegląda posty na platformie.
 
 **Opis:**
-  1. Użytkownik klika na przycisk "polubienia" pod postem.
-  2. System dodaje polubienie do danego posta.
+  1. Użytkownik przegląda posty innych użytkowników.
+  2. Użytkownik klikając na przycisk "polubienia", potwierdza swoje zainteresowanie postem.
+  3. System wyświetla odpowiednią zmianę na interfejsie
 
-**Warunki końcowe:** Post jest oznaczony jako polubiony przez użytkownika.
+**Warunki końcowe:** Post otrzymuje nowe polubienie od użytkownika.
 
 #### Zbieranie statystyk
 
-**Przypadek użycia: Przeglądanie statystyk przez usługodawcę**
+**Przypadek użycia: Zbieranie statystyk dotyczących aktywności użytkowników**
 
-**Aktorzy:** Usługodawca
+**Aktorzy:** Administrator systemu
 
-**Warunki początkowe:** Usługodawca jest zalogowany na swoje konto.
+**Warunki początkowe:** System działa i użytkownicy wykonują różne czynności.
 
 **Opis:**
-  1. Usługodawca przechodzi do sekcji ze statystykami.
-  2. Przegląda zebrane informacje, takie jak liczba polubień, recenzji, ilość zakupów, mapa z podziałem na regiony.
-  3. Analizuje zebrane dane w celu lepszego zrozumienia preferencji klientów i efektywniejszej promocji.
+  1. System monitoruje aktywność użytkowników, taką jak liczba logowań, dodanych postów, recenzji, zakupów itp. i zapisuje je do bazy danych.
+  2. System regularnie usuwa przestarzałe dane.
+  3. Zalogowany użytkownik przechodzi do okna statystyk,
+  4. System wyświetla statystyki dostępne dla użytkownika.
 
-**Warunki końcowe:** Usługodawca ma dostęp do zbiorczych statystyk swojej działalności.
+**Warunki końcowe:** Administrator ma dostęp do statystyk dotyczących aktywności użytkowników.
 
 #### Kredyty
 
@@ -489,11 +515,15 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto.
 
 **Opis:**
-  1. Użytkownik przechodzi do profilu usługodawcy.
-  2. Wybiera opcję subskrypcji.
-  3. Potwierdza subskrypcję usługodawcy.
+  1. Użytkownik przechodzi do opcji subskrypcji usługi premium.
+  2. Użytkownik wybiera plan subskrypcji, który najlepiej odpowiada jego potrzebom.
+  3. Użytkownik wybiera jedną z możliwych płatnośći: Blik, Karta
+  4. System wyswietla okno płatności.
+  5. Użytkownik realizuje płatność za pomocą wybranej metody płatności. 
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie 
+  6. Jeżeli płatność się udała system aktualizuje informacje o użytkowniku i wyświetla komunikat o sukcesie.
 
-**Warunki końcowe:** Użytkownik subskrybuje usługodawcę i otrzymuje częstsze polecenia jego postów.
+**Warunki końcowe:** Użytkownik uzyskuje dostęp do funkcji premium po zakończeniu transakcji.
 
 #### Główna strona użytkownika
 
@@ -617,7 +647,7 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 #### Subskrypcja diety
 
-**Przypadek użycia: Założenie przez użytkownika subksrypcji na dietę**
+**Przypadek użycia: Złożenie przez użytkownika subksrypcji na dietę**
 
 **Aktorzy:** Użytkownik
 
@@ -634,8 +664,237 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Warunki końcowe:** Subskrypcja zostaje złożone i zapisana do ponownej realizacji w określonym czasie.
 
-## VII. Procesy biznesowe
-### 7.1 Identyfikacaj procesów biznesowych
+## VII. Opis testowania
+### 7.1 Przypadków użycia
+#### **1. Synchronizacja**
+**Opis testu:** Weryfikacja automatycznej synchronizacji danych między stroną internetową a aplikacją mobilną po dokonaniu zmian w jednej z platform.
+
+- **Kroki:**
+  1. Zaloguj się na stronie internetowej i w aplikacji mobilnej.
+  2. Dokonaj zmiany danych na stronie internetowej.
+  3. Sprawdź, czy dane zostały zaktualizowane w aplikacji mobilnej.
+  4. Dokonaj zmiany danych w aplikacji mobilnej.
+  5. Sprawdź, czy dane zostały zaktualizowane na stronie internetowej.
+- **Miara testu:**
+  - **Pozytywny wynik:** Dane są automatycznie i bezbłędnie synchronizowane między obiema platformami niezależnie od miejsca wprowadzenia zmian.
+  - **Negatywny wynik:** Dane nie są synchronizowane lub są synchronizowane z opóźnieniem/ błędami.
+    
+
+#### **2. Powiadomienia**
+**Opis testu:** Sprawdzenie możliwości konfiguracji preferencji powiadomień przez użytkownika.
+
+- **Kroki:**
+  1. Zaloguj się na konto użytkownika.
+  2. Przejdź do ustawień powiadomień.
+  3. Zaznacz preferowane typy powiadomień i zapisz ustawienia.
+  4. Wyłącz wszystkie powiadomienia i zapisz ustawienia.
+  5. Sprawdź, czy system przestrzega zapisanych preferencji.
+- **Miara testu:**
+  - **Pozytywny wynik:** Użytkownik otrzymuje tylko wybrane powiadomienia lub żadne, jeśli wszystkie zostały wyłączone.
+  - **Negatywny wynik:** Użytkownik otrzymuje niepożądane powiadomienia lub nie otrzymuje wybranych powiadomień.
+
+#### **3. Wielojęzyczność**
+**Opis testu:** Weryfikacja zmiany języka interfejsu aplikacji na wybrany przez użytkownika.
+
+- **Kroki:**
+  1. Otwórz aplikację i przejdź do ustawień języka.
+  2. Wybierz każdy z dostępnych języków i zaakceptuj zmianę.
+  3. Sprawdź, czy cały interfejs aplikacji zmienia się na wybrany język.
+- **Miara testu:**
+  - **Pozytywny wynik:** Interfejs aplikacji poprawnie wyświetla się w każdym z wybranych języków.
+  - **Negatywny wynik:** Części interfejsu nie zmieniają języka lub pojawiają się błędy w wyświetlaniu.
+
+#### **4. Posty**
+**Opis testu:** Testowanie dodawania nowego posta przez usługodawcę.
+
+- **Kroki:**
+  1. Zaloguj się jako usługodawca.
+  2. Dodaj nowy post, wprowadzając tekst, zdjęcia i hasztagi.
+  3. Sprawdź, czy post jest widoczny na profilu usługodawcy.
+- **Miara testu:**
+  - **Pozytywny wynik:** Post jest poprawnie dodany i widoczny dla użytkowników.
+  - **Negatywny wynik:** Post nie jest widoczny lub pojawiają się błędy podczas dodawania.
+
+#### **5. Recenzja**
+**Opis testu:** Sprawdzenie procesu dodawania recenzji i oceny produktu/usługodawcy przez użytkownika.
+
+- **Kroki:**
+  1. Zaloguj się jako użytkownik, który posiada zakupiony produkt.
+  2. Przejdź do opcji wystawienia recenzji dla zakupionego produktu/usługodawcy.
+  3. Wpisz tekst recenzji oraz ocenę produktu/usługodawcy w skali 5 gwiazdek.
+  4. Potwierdź dodanie recenzji.
+  5. Sprawdź, czy recenzja jest widoczna na profilu produktu/usługodawcy.
+- **Miara testu:**
+  - **Pozytywny wynik:** Post jest poprawnie oznaczony jako polubiony przez użytkownika, a liczba polubień posta zwiększa się o 1.
+  - **Negatywny wynik:** Polubienie nie jest rejestrowane, post nie jest oznaczony jako polubiony lub liczba polubień się nie zmienia.
+
+#### **6. Polubienia**
+**Opis testu:** Weryfikacja funkcjonalności polubienia posta przez użytkownika.
+
+- **Kroki:**
+  1. Zaloguj się jako użytkownik.
+  2. Przeglądaj posty na platformie.
+  3. Kliknij przycisk "polubienia" pod wybranym postem.
+  4. Sprawdź, czy system zarejestrował polubienie i czy post jest oznaczony jako polubiony.
+- **Miara testu:**
+  - **Pozytywny wynik:** Post jest poprawnie oznaczony jako polubiony przez użytkownika, a liczba polubień posta zwiększa się o 1.
+  - **Negatywny wynik:** Polubienie nie jest rejestrowane, post nie jest oznaczony jako polubiony lub liczba polubień się nie zmienia.
+
+#### **7. Zbieranie statystyk**
+**Opis testu:** Weryfikacja poprawności zbierania danych dotyczących aktywności użytkowników przez system.
+
+- **Kroki:**
+  1. Sprawdź, czy system monitoruje aktywność użytkowników poprzez zapisywanie odpowiednich zdarzeń.
+  2. Wykonaj różne czynności jako użytkownicy, takie jak logowanie, dodawanie postów, wystawianie recenzji, dokonywanie zakupów.
+  3. Po upływie określonego czasu, sprawdź, czy system prawidłowo zbiera dane dotyczące tych aktywności.
+  4. Zweryfikuj, czy zebrane dane są przechowywane w systemie.
+  5. Upewnij się, że administrator ma dostęp do zebranych statystyk dotyczących aktywności użytkowników.
+
+- **Miara testu:**
+  - **Pozytywny wynik:** System poprawnie monitoruje aktywność użytkowników i zbiera dane, a administrator może uzyskać dostęp do zebranych statystyk.
+  - **Negatywny wynik:** System nie rejestruje wszystkich aktywności użytkowników lub dane nie są poprawnie zbierane i przechowywane, co uniemożliwia administratorowi uzyskanie dostępu do statystyk.
+
+#### **8. Kredyty**
+**Opis testu:** Weryfikacja wykorzystanie kredytów ogólnych przez użytkownika.
+
+- **Kroki:**
+  1. Użytkownik loguje się na swoje konto.
+  2. Użytkownik przechodzi do dowolnej ofrty w aplikacji.
+  3. Użytkownik wybiera formę płatności jako kredyty ogólne lub specjalnie nadane do danego usługodawcy.
+  4. Użytkownik realizuje płatność.
+
+- **Miara testu:**
+  - **Pozytywny wynik:** Po zakończeniu transakcji kredyty są usuwane z konta użytkownika, ofrta trafia do realizacji.
+  - **Negatywny wynik:** Transakcja nie zostaje zrealizowana lub kredyty nie są poprawnie usuwane z konta użytkownika.
+
+#### **9. Subskrypcje**
+**Opis testu:** Weryfikacja procesu subskrypcji usługi premium przez użytkownika.
+
+- **Kroki:**
+  1. Użytkownik przechodzi do opcji subskrypcji usługi premium.
+  2. Wybiera plan subskrypcji, który najlepiej odpowiada jego potrzebom.ji, dokonywanie zakupów.
+  3. Realizuje płatność za pomocą wybranej metody płatności.
+
+- **Miara testu:**
+  - **Pozytywny wynik:** Użytkownik uzyskuje dostęp do funkcji premium po zakończeniu transakcji.
+  - **Negatywny wynik:** Użytkownik nie uzyskuje dostępu do funkcji premium po zakończeniu transakcji lub proces subskrypcji kończy się błędem.
+
+#### **10. Główna strona użytkownika**
+**Opis testu:** Weryfikacja funkcji wyświetlania rekomendacji dla użytkownika.
+
+- **Kroki:**
+  1. Zaloguj się na swoje konto użytkownika.
+  2. Sprawdź, czy są wyświetlane posty, proponowae dania pokrywają się z subskrybowanymi usługodawcami czy ostatnio dokonywanami zakupami.
+
+- **Miara testu:**
+  - **Pozytywny wynik:** System prawidłowo proponuje uzytkownikowi treści w zależności od jego ostatnicj aktywności.
+  - **Negatywny wynik:** Brak wyświetlanych informacji lub propozycje nie są skorelowane z ostatnimi aktywnosciami użytkownika.
+
+#### **11. Wyszukiwanie**
+**Opis testu:** Weryfikacja funkcjonalności wyszukiwania produktów w aplikacji.
+
+- **Kroki:**
+  1. Użytkownik zalogowuje się na swoje konto.
+  2. Użytkownik wprowadza kryteria wyszukiwania w pole wyszukiwania.
+  3. Użytkownik naciska przycisk lub klawisz "Szukaj".
+  4. System przetwarza zapytanie i wyświetla wyniki pasujące do podanych kryteriów.
+
+- **Miara testu:**
+  - **Pozytywny wynik:** System wyświetla poprawne wyniki wyszukiwania zgodne z podanymi kryteriami.
+  - **Negatywny wynik:** System nie wyświetla żadnych wyników, wyświetla błędne wyniki lub aplikacja zawiesza się podczas wyszukiwania.
+
+#### **12. Zamówienia**
+**Opis testu:** Weryfikacja procesu składania zamówienia przez użytkownika.
+
+- **Kroki:**
+  1. Użytkownik zalogowuje się na swoje konto i znajduje się na stronie produktu.
+  2. Użytkownik wybiera produkt, który chce zamówić.
+  3. Użytkownik dodaje produkt do koszyka lub przechodzi od razu do procesu zamawiania.
+  4. Użytkownik podaje niezbędne dane do zrealizowania zamówienia, takie jak adres dostawy, metoda płatności itp.
+  5. Użytkownik potwierdza zamówienie.
+- **Miara testu:**
+  - **Pozytywny wynik:** Zamówienie jest pomyślnie złożone i widoczne w historii zamówień użytkownika.
+  - **Negatywny wynik:** Nie można dokończyć procesu zamówienia z powodu błędów, zamówienie nie jest widoczne w historii zamówień użytkownika lub występują problemy z płatnością.
+
+#### **13. Historia**
+**Opis testu:** Test przeglądania historii zamówień przez użytkownika.
+
+- **Kroki:**
+  1. Użytkownik loguje się na swoje konto na platformie sklepu.
+  2. Użytkownik przechodzi do ustawień konta.
+  3. Użytkownik wybiera opcję "historia zamówień".
+  4. Użytkownik przegląda listę wcześniej złożonych zamówień.
+  5. Użytkownik wybiera dowolne zamówienie.
+  6. Użytkownik sprawdza szczegóły zamówienia, w tym status dostawy.
+- **Miara testu:**
+  - **Pozytywny wynik:** Lista złożonych zamówień jest widoczna. Szczegóły każdego zamówienia, w tym status dostawy, są dostępne po wybraniu odpowiedniej pozycji na liście.
+  - **Negatywny wynik:** Historia zamówień jest niewidoczna, niekompletna lub szczegółowe informacje o poszczególnych zamówieniach nie są dostępne.
+
+#### **14. Płatności**
+**Opis testu:** Test realizacji płatności za zamówienie przez użytkownika
+
+- **Kroki:**
+  1. Użytkownik loguje się na swoje konto.
+  2. Przechodzi do koszyka z wybranymi produktami.
+  3. Wybiera opcję realizacji płatności.
+  4. Wybiera metodę płatności i wprowadza niezbędne dane.
+  5. Potwierdza płatność przez kliknięcie przycisku "Zapłać".
+- **Miara testu:**
+  - **Pozytywny wynik:** Płatność zostaje zrealizowana, a użytkownik otrzymuje potwierdzenie transakcji.
+  - **Negatywny wynik:** Płatność nie zostaje zrealizowana, użytkownik nie otrzymuje potwierdzenia transakcji.
+
+#### **15. Konto premium**
+**Opis testu:** Test zakupu kontem premium przez użytkownika
+
+- **Kroki:**
+  1. Użytkownik loguje się na swoje konto.
+  2. Przechodzi do ustawień konta.
+  3. Wybiera opcję zakupu konta premium.
+  4. Dokonuje tranzakcji.
+  5. Użytkownik ma dostęp do nowych funkcjonalności.
+- **Miara testu:**
+  - **Pozytywny wynik:** Użytkownik widzi zmiany w strukturze aplikacji i posiada dostęp do wcześniej nie dostępnych funkcjonalności.
+  - **Negatywny wynik:** Użytkownik nie ma dostępu do funkcjonalności premium lub tranzakcja nie zostaje wykonana.
+
+#### **16. Status zamówienia**
+**Opis testu:** Test sprawdzania statusu zamówienia przez użytkownika
+
+- **Kroki:**
+  1. Użytkownik loguje się do systemu.
+  2. Użytkownik przechodzi do historii swoich zamówień.
+  3. Użytkownik wybiera zamówienie, którego status chce sprawdzić.
+  4. Użytkownik sprawdza status wybranego zamówienia.
+- **Miara testu:**
+  - **Pozytywny wynik:** Informacja o statusie zamówienia jest zgodna z aktualnym stanem i jest dla użytkownika zrozumiała.
+  - **Negatywny wynik:** Informacja o statusie zamówienia jest niezgodna z aktualnym stanem lub nie jest dla użytkownika zrozumiała.
+
+#### **17. Zarządzanie kontami użytkowników przez administratora**
+**Opis testu:** Test zarządzania kontami użytkowników przez administratora
+
+- **Kroki:**
+  1. Administrator loguje się do panelu administracyjnego.
+  2. Administrator przechodzi do sekcji zarządzania kontami użytkowników.
+  3. Administrator przegląda listę wszystkich kont użytkowników.
+  4. Administrator dodaje, edytuje lub usuwa wybrane konta.
+- **Miara testu:**
+  - **Pozytywny wynik:** Administracja kontami użytkowników przebiega zgodnie z oczekiwaniami, wszystkie zmiany są poprawnie zapisywane w systemie.
+  - **Negatywny wynik:** Administracja kontami użytkowników napotyka na problemy, zmiany nie są zapisywane lub są zapisywane niepoprawnie.
+
+#### **18. Subskrypcja diety**
+**Opis testu:** Test złożenie przez użytkownika subksrypcji na dietę
+
+- **Kroki:**
+  1. Użytkownik loguje się do systemu.
+  2. Użytkownik przechodzi do zakupu diety.
+  3. Użytkownik wybiera okres na jaki chce zakupić deitę.
+  4. Użytkownik wybiera formę płatności i jej dokonuje
+  5. Użytkownik dostaje komunikat o dokonaniu subksrypcji i jest ją w stanie zobaczyć w liście swoich subksrypcji
+- **Miara testu:**
+  - **Pozytywny wynik:** Użtkownik widzi informacje o dokonanej subskrypcji a odpowiedni usługodawcy również dostali powaidamenie o jej dokonaniu.
+  - **Negatywny wynik:** Użytkownik nie jest w stanie sprawdzić swoich subskrypcji lub informacja o subskrypcji nie doszła do usługodawców.
+
+## VIII. Procesy biznesowe
+### 8.1 Identyfikacaj procesów biznesowych
 - **Synchronizacja danych między stroną internetową a aplikacją mobilną:**
 [Użytkownik dokonuje zmiany danych] Użytkownik zmienia dane, takie jak profil użytkownika, preferencje, ustawienia, zawartość, itp., zarówno na stronie internetowej, jak i w aplikacji mobilnej.[System wykrywa zmiany] System stale monitoruje aktywność użytkownika na obu platformach i wykrywa wszelkie zmiany w danych.[Inicjacja procesu synchronizacji] Po wykryciu zmian w danych na jednej z platform, system inicjuje proces synchronizacji, mający na celu zrównanie danych między stroną internetową a aplikacją mobilną.[Analiza różnic w danych] System analizuje różnice w danych między platformami, identyfikując, które dane wymagają synchronizacji.[Synchronizacja danych] Dane, które uległy zmianie na jednej z platform, są synchronizowane z odpowiednią platformą docelową.Proces synchronizacji obejmuje przesyłanie, aktualizację i zapisywanie danych na obu platformach w celu zapewnienia ich zgodności.
 
@@ -676,8 +935,8 @@ System co miesiąc generuje raport związany wydajnościowy Zespół ds. obsług
 - **Reakcja na ataki/błędy** :
 System w czasie monitorowania aktywności wykrywa nieprawidłowość wysyła wiadomośc do Zespół ds. obsługi technicznej. Zespół ds. obsługi technicznej dokonuje analizy zagrożeń dotyczących błędu. Jeśli błąd nie niesie ze sobą zagrożeń przechodzą do naprawy błędu. dokonuje naprawę po czym sprawdzają błąd został wyeliminowany i jeśli naprawa się nie powiodła ponownie dokonują naprawę, jeśli błąd wiąże się z zagrożeniami wycieku danych odpowiednie systemy są blokowane i Zespół ds. obsługi technicznej dokonuje naprawę po czym sprawdzają błąd został wyeliminowany i jeśli naprawa się nie powiodła ponownie dokonują naprawę , jeśli naprawa się powiodła Zespół ds. obsługi technicznej przywraca zablokowane części systemu.
 
-## VII. UI
-### 8.1 Ustalenia dotyczące wyglądu UI
+## IX. UI
+### 9.1 Ustalenia dotyczące wyglądu UI
 Po ustaleniach z klientem ustaliliśmy wstępną wizję odnoszącą się do topoligi projektu wizualnego aplikacji:
 - rodzaje czcionek używanych w projekcie
 - paleta kolorów używana w projekcie 
@@ -688,15 +947,15 @@ Na stronie głównej powinno być wyświetlane najpopularniejsze oferty, rodzaje
 Na dole strony powinna zawierać się stopka zwierające regulamin, dane kontaktowe itp.
 Na razie są to ustalenia wstępne i klijent pozwolił na dowolność zepołowi designerskiemu. Ewntualne uwagi będą już zwracane do konkretnych widoków. 
 
-## IX. Słownik Dziedziny 
-### 9.1 Terminologia biznesowa
+## X. Słownik Dziedziny 
+### 10.1 Terminologia biznesowa
 **usługodawca** - firma kateringowa <br>
 **użytkownik** - osoba zakupująca posiłki/diety w aplikacji <br>
 **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
 **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
 **system** - aplikacja która powstaje 
 
-### 9.2 Terminologia techniczna
+### 10.2 Terminologia techniczna
 **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
 **PWA** - progresywna aplikacja webowa stworzona w technologii, która pozwala uzyskać wrażenie, że tak przygotowana strona internetowa działa jak natywna aplikacja <br>
 **hashtag** - służy do oznaczania treści (wpisów, zdjęć), aby łatwiej można je było wyszukiwać <br>
@@ -710,7 +969,7 @@ Na razie są to ustalenia wstępne i klijent pozwolił na dowolność zepołowi 
 **testy odpornościowe** - to rodzaj testów oprogramowania, który ma na celu ocenę zdolności systemu informatycznego do radzenia sobie z nieprzewidywalnymi i niespodziewanymi sytuacjami oraz przywrócenia normalnego działania po wystąpieniu awarii lub zakłóceń <br>
 **backup** - kopia zapasowych danych wykonywana w celu ich zabezpieczenia przed utratą, uszkodzeniem lub nieautoryzowanym dostępem <br>
 
-### 9.3 Terminologia użytkownicza
+### 10.3 Terminologia użytkownicza
 **statystyki** - zbiór ogólnych reakcje użytkowników na posty, wyświetlania, zarobki z aplikacji <br>
 **recenzja** - opinia użytkownika na temat dania lub usługodawcy <br>
 **rodzaj diety** - wyłącznie nazwa <br>
