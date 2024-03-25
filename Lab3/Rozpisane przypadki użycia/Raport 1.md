@@ -62,10 +62,10 @@
 **Opis:**
 1. Usługodawca przechodzi do opcji dodawania nowego posta na swoim profilu.
 2. Wpisuje treść posta oraz dodaje zdjęcia i hasztagi.
-3. Potwierdza dodanie posta.
-4.1 Jeżeli dodanie posta się udało system wyświetla nowy post i zapisuje ją do bazy danych.
-5.1 System wysyła powiadomienia o nowym poście odpowiednim użytkownikom.
-4.2 Jeżeli dodanie posta się nie udało system wyświetla komunikat o błędzie.
+3. Potwierdza dodanie posta. 
+4. Jeżeli dodanie posta się udało system wyświetla nowy post i zapisuje ją do bazy danych. 
+    1. Jeżeli dodanie posta się nie udało system wyświetla komunikat o błędzie.
+5. System wysyła powiadomienia o nowym poście odpowiednim użytkownikom.
 
 **Warunki końcowe:** Nowy post usługodawcy jest widoczny na jego profilu dla użytkowników.
 
@@ -80,10 +80,10 @@
 **Opis:**
 1. Użytkownik przechodzi do opcji wystawiania recenzji danego produktu.
 2. System wyświetla odpowiednie pole do wpisania recenzji
-2. Uzytkownik wpisuje treść recenzji oraz przyznaje ocenę produktowi.
-3. Użytownik potwierdza dodanie recenzji.
-4.1 Jeżeli dodanie recenzji się udało system wyświetla nową recenzje i zapisuje ją do bazy danych.
-4.2 Jeżeli dodanie recenzji się nie udało system wyświetla komunikat o błędzie.
+3. Uzytkownik wpisuje treść recenzji oraz przyznaje ocenę produktowi.
+4. Użytownik potwierdza dodanie recenzji. 
+    1. Jeżeli dodanie recenzji się nie udało system wyświetla komunikat o błędzie.
+5. Jeżeli dodanie recenzji się udało system wyświetla nową recenzje i zapisuje ją do bazy danych.
 
 **Warunki końcowe:** Recenzja użytkownika jest widoczna na stronie produktu dla innych użytkowników.
 
@@ -120,21 +120,16 @@
 
 #### Kredyty
 
-**Przypadek użycia: Zakup kredytów przez użytkownika**
+**Przypadek użycia: Wykorzystanie kredytów ogólnych przez użytkownika**
 
 **Aktorzy:** Użytkownik
 
-**Warunki początkowe:** Użytkownik jest zalogowany na swoje konto.
+**Warunki początkowe:** Użytkownik posiada kredyty ogólne na swoim koncie.
 
 **Opis:**
-1. Użytkownik przechodzi do opcji zakupu kredytów.
-2. Użytkownik Wwybiera pakiet kredytów, który chce zakupić.
-3. Użytkownik wybiera jedną z możliwych opcji płatnośći: Blik, Karta.
-4. System wyswietla okno płatności.
-5. Uzytkownik realizuje płatność za pomocą wybranej metody płatności.
-5.2 Jeżeli płatność się nie udała system wyświetla komunikat o błędzie
-5.1 Jeżeli się udała system przypisuje odpowiednią ilość kredytów do użytkownika i wyświetla komunikat o sukcesie.
-6.1 System wyświetla nową ilość kredytów.
+  1. Użytkownik dokonuje zakupu produktu/usługi.
+  2. Wybiera opcję zapłaty za pomocą kredytów.
+  3. System potwierdza dokonanie płatności i odlicza odpowiednią ilość kredytów z konta użytkownika.
 
 **Warunki końcowe:** Kredyty są dodane do konta użytkownika po zakończeniu transakcji.
 
@@ -151,8 +146,8 @@
 2. Użytkownik wybiera plan subskrypcji, który najlepiej odpowiada jego potrzebom.
 3. Użytkownik wybiera jedną z możliwych płatnośći: Blik, Karta
 4. System wyswietla okno płatności.
-5. Użytkownik realizuje płatność za pomocą wybranej metody płatności.
-6.2 Jeżeli płatność się nie udała system wyświetla komunikat o błędzie
-6.1 Jeżeli płatność się udała system aktualizuje informacje o użytkowniku i wyświetla komunikat o sukcesie.
+5. Użytkownik realizuje płatność za pomocą wybranej metody płatności. 
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie 
+6. Jeżeli płatność się udała system aktualizuje informacje o użytkowniku i wyświetla komunikat o sukcesie.
 
 **Warunki końcowe:** Użytkownik uzyskuje dostęp do funkcji premium po zakończeniu transakcji.
