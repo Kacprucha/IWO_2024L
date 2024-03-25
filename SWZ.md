@@ -17,7 +17,7 @@ Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowied
   - Angelina Sudenkova *- 8.1 Identyfikacaj procesów biznesowych*
   - Mateusz Czarnecki
   - Szymon Kopańko *- 6.4 Opisy przypadków użycia*
-  - Tymoteusz Gryszkalis
+  - Tymoteusz Gryszkalis *- 6.5 Implementacja przypadków użycia w procesach biznesowych*
 - Analitycy Systemowi:
   - Krzysztof Jurkowski *- 5.1 Wizja systemu, 5.2 Lista cech systemu*
   - Mateusz Czarnecki *- 5.2 Lista cech systemu, 5.3 Wymagania dotyczące wydajności*
@@ -678,6 +678,10 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
   6. System umożliwia użytkownikowi dostęp do sekcji z indywidualnym planem diety, poradami żywieniowymi i możliwością śledzenia postępów.
 
 **Warunki końcowe:** Użytkownik posiada aktywną subskrypcję diety, z dostępem do zindywidualizowanych materiałów i wsparcia online.
+
+### 6.5 Implementacja przypadków użycia w procesach biznesowych
+
+Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam, że wszystkie przypadki użycia zostaną odpowiednio zaimplementowane.
 
 ## VII. Opis testowania
 ### 7.1 Przypadków użycia
