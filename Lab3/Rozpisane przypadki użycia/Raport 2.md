@@ -45,7 +45,7 @@
 2. Użytkownik Przechodzi do podsumowania koszyka i weryfikuje wybrane produkty.
 3. Użytkownik Wybiera opcję zamówienia i wypełnia formularz z danymi do wysyłki i płatności.
     1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie.
-4 Jeżeli płatność się udała, system przetwarza zamówienie i wysyła potwierdzenie na adres email użytkownika.
+4. Jeżeli płatność się udała, system przetwarza zamówienie i wysyła potwierdzenie na adres email użytkownika.
 
 **Warunki końcowe:** Zamówienie jest złożone i użytkownik oczekuje na dostawę.
 
