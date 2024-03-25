@@ -567,8 +567,10 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Opis:**
   1. Użytkownik przegląda dostępne dania od różnych usługodawców.
   2. Dodaje wybrane dania do koszyka zamówień.
-  3. Wybiera opcję dostawy i płatności.
-  4. Potwierdza zamówienie.
+  3. Użytkownik Przechodzi do podsumowania koszyka i weryfikuje wybrane produkty.
+  4. Użytkownik Wybiera opcję zamówienia i wypełnia formularz z danymi do wysyłki i płatności.
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie.
+  5. Jeżeli płatność się udała, system przetwarza zamówienie i wysyła potwierdzenie na adres email użytkownika.
 
 **Warunki końcowe:** Zamówienie zostaje złożone i przekazane do realizacji.
 
@@ -582,8 +584,9 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Opis:**
   1. Użytkownik przechodzi do sekcji historii zamówień.
-  2. Przegląda listę swoich poprzednich zamówień oraz subskrypcji.
-  3. Ma możliwość anulowania zamówienia, jeśli jego dostarczenie opóźniło się więcej niż 24 godziny.
+  2. System wyświetla listę zamówień lub subskrypcji wraz z ich szczegółami: datą zamówienia, status, kwotą i opcją szczegółów.
+  3. Użytkownik może przeglądać szczegóły każdego zamówienia, w tym status wysyłki i historię płatności.
+  4. Ma możliwość anulowania zamówienia, jeśli jego dostarczenie opóźniło się więcej niż 24 godziny.
 
 **Warunki końcowe:** Użytkownik ma dostęp do historii swoich zamówień oraz subskrypcji.
 
@@ -598,9 +601,12 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Opis:**
   1. Użytkownik przechodzi do opcji płatności.
   2. Wybiera preferowany sposób płatności: blikiem, kartą.
-  3. Potwierdza dokonanie płatności.
+  3. Wprowadza niezbędne dane do realizacji płatności.
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie
+  4. Jeżeli płatność się udała, system potwierdza płatność i czeka na autoryzację transakcji.
+  5. Po pomyślnej autoryzacji, system wysyła użytkownikowi potwierdzenie transakcji i aktualizuje status zamówienia.
 
-**Warunki końcowe:** Zamówienie jest opłacone, a produkty są przygotowane do dostawy.
+**Warunki końcowe:** Płatność zostaje zrealizowana, a zamówienie jest przetwarzane do wysyłki. Użytkownik otrzymuje potwierdzenie płatności.
 
 #### Konto premium
 
@@ -611,11 +617,15 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto.
 
 **Opis:**
-  1. Użytkownik przechodzi do opcji zakupu konta premium.
-  2. Wybiera preferowany plan konta premium.
-  3. Potwierdza zakup konta premium.
+  1. Użytkownik przechodzi ustawień konta.
+  2. Użytkownik wybiera opcję zakupu konta premium.
+  3. Wybiera preferowany plan konta premium.
+  4. Użytkownik wybiera forme płatności i ją realizuje.
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie.
+  5. Użytkownik otrzymuje komunikat o nadaniu nowych uprawnień.
+  6. System odblokowuje nowe funcjonalności dla użytkownika.
 
-**Warunki końcowe:** Użytkownik ma aktywowane konto premium i korzysta z jego dodatkowych funkcji.
+**Warunki końcowe:** Użytkownik ma aktywowane konto premium i ma dostęp do jego dodatkowych funkcji.
 
 #### Status zamówienia
 
@@ -626,8 +636,10 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto i ma złożone zamówienie.
 
 **Opis:**
-  1. Użytkownik przechodzi do sekcji statusu zamówienia.
-  2. Sprawdza aktualny status swojego zamówienia, czy jest w trakcie realizacji, dostarczania itp.
+  1. Użytkownik wchodzi w sekcję historii zamówień na swoim koncie.
+  2. Wybiera zamówienie, którego status chce sprawdzić.
+  3. System wyświetla szczegółowe informacje o zamówieniu, w tym aktualny status, przewidywaną datę dostawy i historię zmian statusu.
+  4. Użytkownik może również zobaczyć informacje o śledzeniu przesyłki, jeśli są dostępne.
 
 **Warunki końcowe:** Użytkownik ma aktualną informację o statusie swojego zamówienia.
 
@@ -635,15 +647,18 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Przypadek użycia: Zarządzanie kontami**
 
-**Aktorzy:** Administrator
+**Aktorzy:** Administrator systemu
 
 **Warunki początkowe:** Administrator ma dostęp do panelu administracyjnego.
 
 **Opis:**
-  1. Administrator może tworzyć, edytować i usuwać konta użytkowników i usługodawców.
-  2. Zarządza uprawnieniami kont, np. nadaje konto premium, blokuje konto za złamanie regulaminu itp.
+  1. Administrator loguje się do panelu administracyjnego.
+  2. Przegląda listę kont użytkowników, może wyszukiwać konkretnych użytkowników po nazwie, emailu lub innym kryterium.
+  3. Może tworzyć nowe konta, edytować istniejące profile użytkowników lub dezaktywować konta.
+  4. Przy edycji, może zmieniać role użytkowników, resetować hasła lub aktualizować informacje profilowe.
+  5. Po dokonaniu zmian, system zapisuje aktualizacje.
 
-**Warunki końcowe:** Administrator skutecznie zarządza kontami na platformie.
+**Warunki końcowe:** Administrator zarządza kontami użytkowników, zapewniając prawidłowe funkcjonowanie serwisu.
 
 #### Subskrypcja diety
 
@@ -654,15 +669,15 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 **Warunki początkowe:** Użytkownik jest zalogowany na swoje konto.
 
 **Opis:**
-  1. Użytkownik wybiera interesującą go ofertę diety.
-  2. System wyśwetla użytkownikowi formularz subskrypcji.
-  3. Użytkownik wybiera okres subskrypcji: dzień, tydzień, miesiąc.
-  4. System przekierowuje użytkownika do formularza płatności
-  5. Użytkownik wybiera opcję dostawy i płatności.
-  6. System wyświetla dane subskrypcji.
-  7. Użytkownik akcpetuje dokonanie subskrypcji.
+  1. Użytkownik wybiera opcję subskrypcji diety z dostępnych ofert.
+  2. System prezentuje formularz subskrypcji, gdzie użytkownik wybiera preferowany rodzaj diety, okres subskrypcji i szczegóły dotyczące dostawy.
+  3. Użytkownik przechodzi do płatności, wybierając preferowaną metodę i wprowadzając niezbędne dane.
+    1. Jeżeli płatność się nie udała system wyświetla komunikat o błędzie.
+  4. Jeżeli płatność się udała, system przetwarza zamówienie i aktywuje subskrypcję.
+  5. Użytkownik otrzymuje potwierdzenie założenia subskrypcji diety oraz szczegóły dotyczące planu dostaw na podany adres.
+  6. System umożliwia użytkownikowi dostęp do sekcji z indywidualnym planem diety, poradami żywieniowymi i możliwością śledzenia postępów.
 
-**Warunki końcowe:** Subskrypcja zostaje złożone i zapisana do ponownej realizacji w określonym czasie.
+**Warunki końcowe:** Użytkownik posiada aktywną subskrypcję diety, z dostępem do zindywidualizowanych materiałów i wsparcia online.
 
 ## VII. Opis testowania
 ### 7.1 Przypadków użycia
