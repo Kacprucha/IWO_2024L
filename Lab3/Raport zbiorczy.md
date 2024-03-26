@@ -315,29 +315,61 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
 
 ## Diagramy UML
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/subskrypcje.png) <br>
+![PU subskrypcja konta premium](../Lab3/UML%20-%20png/subskrypcje.png) <br>
 *autor: Karol Zalewski* 
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/zamowienie.png) <br>
+![PU dokonanie zamówienia](../Lab3/UML%20-%20png/zamowienie.png) <br>
 *autor: Karol Zalewski*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/sprawdzanie%20statystyk.png) <br>
+![PU sprawdzenie statystyk](../Lab3/UML%20-%20png/sprawdzanie%20statystyk.png) <br>
 *autor: Jakub Wysocki*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/wykorzystanie%20kredytu.png) <br>
+![PU wykorzystanie kredytów](../Lab3/UML%20-%20png/wykorzystanie%20kredytu.png) <br>
 *autor: Jakub Wysocki*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/PolubieniePosta.png) <br>
+![PU polubienie posta](../Lab3/UML%20-%20png/PolubieniePosta.png) <br>
 *autor: Angelina Sudenkova*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/DodawanieRecenzji.png) <br>
+![PU dodanie recenzji](../Lab3/UML%20-%20png/DodawanieRecenzji.png) <br>
 *autor: Angelina Sudenkova*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/synchronizacja_danych.png) <br>
+![PU synchronizacja danych](../Lab3/UML%20-%20png/synchronizacja_danych.png) <br>
 *autor: Sebastian Pawliński*
 
-![Synchronizacja danych](../Lab3/UML%20-%20png/zarzadzanie_powiadomieniami.png) <br>
+![PU zarządzanie powaiadomieniami](../Lab3/UML%20-%20png/zarzadzanie_powiadomieniami.png) <br>
 *autor: Sebastian Pawliński*
+
+![PU subskrypcja diety](../Lab3/UML%20-%20png/subskrypcja_diety.png) <br>
+*autor: Krzysztof Jurkowski*
+
+![PU administratora systemu](../Lab3/UML%20-%20png/pu_administartora.png) <br>
+*autor: Krzysztof Jurkowski*
+
+![PU sprawdzenie statusu zamówienia](../Lab3/UML%20-%20png/status_zamówienia.jpg) <br>
+*autor: Tymoteusz Gryszkalis*
+
+![PU subskrypcja konta premium](../Lab3/UML%20-%20png/zapkup_premium.jpg) <br>
+*autor: Tymoteusz Gryszkalis*
+
+![PU zmainy języka systemu](../Lab3/UML%20-%20png/zmiania_jezyka.png) <br>
+*autor: Wojtek Szade*
+
+![PU dodania posta](../Lab3/UML%20-%20png/dodanie_posta.png.png) <br>
+*autor: Wojtek Szade*
+
+## Widoki do najważniejszych PU
+
+![Widok postów usługodawcy i zamiawaniania subskrypcji](../Lab3/UI/Widok_postow_usugodawcy_i_Widok_zamawniana_subkrypcji_diety.png) <br>
+*autor: Szymon Rogodziński*
+
+![Widok płatności](../Lab3/UI/widok%20płatności.png) <br>
+*autor: Filip Sosnowski*
+
+![Widok płatności - dane](../Lab3/UI/widok%20płatności%20dane.png) <br>
+*autor: Filip Sosnowski*
+
+![Widok histori zamówień, subskrypcji i aktualnego zamówienia](../Lab3/UI/historia%20zamówień.png) <br>
+*autor: Filip Sosnowski*
 
 ## Reporty z opisów testowania przypadków użycia
 
