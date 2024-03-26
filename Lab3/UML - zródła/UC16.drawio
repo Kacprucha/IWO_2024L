@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2024-03-25T22:53:24.136Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0" etag="jemTnczsvsVYub2Gb2-G" version="24.1.0" type="device">
+  <diagram name="Strona-1" id="yD-94Rvltuhks4XegXLm">
+    <mxGraphModel dx="1393" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Cnp6uQmmtdZANyJbKz---1" value="Użytkownik" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="110" width="276" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---2" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---1">
+          <mxGeometry x="123" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Cnp6uQmmtdZANyJbKz---2" parent="Cnp6uQmmtdZANyJbKz---1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="138" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---4" value="Użytkownik przechodzi do sekcji zamówień" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---1">
+          <mxGeometry x="68" y="120" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---6" value="Użytkownik wybiera szczegóły danego zamówienia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---1">
+          <mxGeometry x="68" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---20" value="Użytkownik wybiera podgląd statusu zamówienia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---1">
+          <mxGeometry x="68" y="460" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---10" value="System" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="406" y="110" width="276" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---18" value="System wyświetla złożone zamówienia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---10">
+          <mxGeometry x="68" y="180" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---19" value="System wyświetla szczegóły danego zamówienia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---10">
+          <mxGeometry x="68" y="370" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---8" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---10">
+          <mxGeometry x="123" y="675" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Cnp6uQmmtdZANyJbKz---10" source="Cnp6uQmmtdZANyJbKz---21" target="Cnp6uQmmtdZANyJbKz---8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---21" value="System wyświetla status zamówienia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="Cnp6uQmmtdZANyJbKz---10">
+          <mxGeometry x="68" y="560" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cnp6uQmmtdZANyJbKz---4" target="Cnp6uQmmtdZANyJbKz---18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cnp6uQmmtdZANyJbKz---18" target="Cnp6uQmmtdZANyJbKz---6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cnp6uQmmtdZANyJbKz---6" target="Cnp6uQmmtdZANyJbKz---19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cnp6uQmmtdZANyJbKz---19" target="Cnp6uQmmtdZANyJbKz---20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cnp6uQmmtdZANyJbKz---27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Cnp6uQmmtdZANyJbKz---20" target="Cnp6uQmmtdZANyJbKz---21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
