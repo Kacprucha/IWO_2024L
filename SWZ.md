@@ -679,6 +679,32 @@ Niezależnie od typu aplikacji zestaw funkcjonalności musi być identyczny dla 
 
 **Warunki końcowe:** Użytkownik posiada aktywną subskrypcję diety, z dostępem do zindywidualizowanych materiałów i wsparcia online.
 
+#### Anulowanie zamówienia
+
+**Przypadek użycia: Użytkownik chce anulować złożone wcześniej zamówienie**
+
+**Aktorzy:** Użytkownik
+
+**Warunki początkowe:** Użytkownik jest zalogowany na swoje konto i ma aktywne zamówienie poniżej 24h do realizacji.
+
+**Opis:**
+  1. Użytkownik wybiera okno historię złożonych zmówień.
+  2. System wyświetla okno pokazując zbliżającą się realizację zamówienia
+    1. W przypadku zamówienia, które będzie w przeciągu 24h system uniemozliwia anulowanie zamówienia.
+  3. W przypadku zamówienia, które będzie realizowane dłużej niż 24h system wyświetla przyciska anulowania zamówienia. 
+  4. Użytkownik wciska przycisk anulownia.
+  5. System wyświetla pop-up z potwierdzeniem anulowania zamówienia.
+  6. Użytkownik potwierdza anulowanie.
+  7. System wyświetla, krótką ankietę dlaczego uzytkownik chce anulować zamówienia.
+    1. Użytkownik wypełnia ankietę.
+  8. Użytkownik wysyła ankietę.
+  9. System zapisuje ankietę i wysyła ją do uługodawcy anulowanego produktu.
+  10. System wysyła komunikat o anulowaniu zamówienia do systemu usługodawcy.
+  11. System nadaje użytkwnikowi odpowiednią ilość kredytów do wykorzystania u danego usługodawcy.
+  12. System wysyła komunikat do użytkownika o anulowaniu zamówienia oraz nadaniu kredytów.
+
+**Warunki końcowe:** Zamówienie użtkownika zostało anulowane i użytkownik otrzymał kredyty w ramach rekompensaty.
+
 ### 6.5 Implementacja przypadków użycia w procesach biznesowych
 
 Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam, że wszystkie przypadki użycia zostaną odpowiednio zaimplementowane.
@@ -744,8 +770,8 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
   4. Potwierdź dodanie recenzji.
   5. Sprawdź, czy recenzja jest widoczna na profilu produktu/usługodawcy.
 - **Miara testu:**
-  - **Pozytywny wynik:** Post jest poprawnie oznaczony jako polubiony przez użytkownika, a liczba polubień posta zwiększa się o 1.
-  - **Negatywny wynik:** Polubienie nie jest rejestrowane, post nie jest oznaczony jako polubiony lub liczba polubień się nie zmienia.
+  - **Pozytywny wynik:** Rezencja jest poprawnie wystawione widać opis oraz poprawną ilość gwiazdek, która została zaznaczona.
+  - **Negatywny wynik:** Recenzja nie jest wystaionw czy opis nie jest dodany, czy liczba gwiazdek nie jest zgodna z wyznaczoną.
 
 #### **6. Polubienia**
 **Opis testu:** Weryfikacja funkcjonalności polubienia posta przez użytkownika.
@@ -790,13 +816,13 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
 **Opis testu:** Weryfikacja procesu subskrypcji usługi premium przez użytkownika.
 
 - **Kroki:**
-  1. Użytkownik przechodzi do opcji subskrypcji usługi premium.
-  2. Wybiera plan subskrypcji, który najlepiej odpowiada jego potrzebom.ji, dokonywanie zakupów.
+  1. Użytkownik/usługodawca przechodzi do opcji subskrypcji usługi premium.
+  2. Wybiera plan subskrypcji, który najlepiej odpowiada jego potrzebom.
   3. Realizuje płatność za pomocą wybranej metody płatności.
 
 - **Miara testu:**
-  - **Pozytywny wynik:** Użytkownik uzyskuje dostęp do funkcji premium po zakończeniu transakcji.
-  - **Negatywny wynik:** Użytkownik nie uzyskuje dostępu do funkcji premium po zakończeniu transakcji lub proces subskrypcji kończy się błędem.
+  - **Pozytywny wynik:** Użytkownik/usługodawca uzyskuje dostęp do funkcji premium po zakończeniu transakcji.
+  - **Negatywny wynik:** Użytkownik/usługodawca nie uzyskuje dostępu do funkcji premium po zakończeniu transakcji lub proces subskrypcji kończy się błędem.
 
 #### **10. Główna strona użytkownika**
 **Opis testu:** Weryfikacja funkcji wyświetlania rekomendacji dla użytkownika.
@@ -806,7 +832,7 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
   2. Sprawdź, czy są wyświetlane posty, proponowae dania pokrywają się z subskrybowanymi usługodawcami czy ostatnio dokonywanami zakupami.
 
 - **Miara testu:**
-  - **Pozytywny wynik:** System prawidłowo proponuje uzytkownikowi treści w zależności od jego ostatnicj aktywności.
+  - **Pozytywny wynik:** System prawidłowo proponuje uzytkownikowi treści w zależności od jego ostatnicj aktywności. Miarą testów będzie 60% zgodności treści z historią oraz subskrypcjiami użytkownika przy założeniu, że użytkownik ma w historii przynajmniej 15 zamówień.
   - **Negatywny wynik:** Brak wyświetlanych informacji lub propozycje nie są skorelowane z ostatnimi aktywnosciami użytkownika.
 
 #### **11. Wyszukiwanie**
@@ -826,7 +852,7 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
 **Opis testu:** Weryfikacja procesu składania zamówienia przez użytkownika.
 
 - **Kroki:**
-  1. Użytkownik zalogowuje się na swoje konto i znajduje się na stronie produktu.
+  1. Użytkownik zalogowuje się na swoje konto i znajduje się na stronie głównej.
   2. Użytkownik wybiera produkt, który chce zamówić.
   3. Użytkownik dodaje produkt do koszyka lub przechodzi od razu do procesu zamawiania.
   4. Użytkownik podaje niezbędne dane do zrealizowania zamówienia, takie jak adres dostawy, metoda płatności itp.
@@ -972,7 +998,9 @@ Na razie są to ustalenia wstępne i klijent pozwolił na dowolność zepołowi 
 **użytkownik** - osoba zakupująca posiłki/diety w aplikacji <br>
 **odpowiednie produkty** - produkty sezonowe zbierane lokalnie <br>
 **kredyt** - forma wewnętrzych kuponów rozdawanych w ramacg rekompensata <br>
-**system** - aplikacja która powstaje 
+**system** - aplikacja która powstaje <br>
+**przestażałe dane** - dane użytkowników wykorzystywane w zbieraniu statystyk, które zbierane było do roku temu oraz dane, które zostały zmienione
+**powiadomienia niewyłączalne** - powiadomienia związane z zmianami w regulaminie, komunikatach wymuszanych prawnie
 
 ### 10.2 Terminologia techniczna
 **post** - treść, hashy i ewentualne zdjęcie umieszczne przez usługodawcę w formie promocje, infrmacji <br>
