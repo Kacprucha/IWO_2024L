@@ -345,6 +345,18 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
 ![PU administratora systemu](../Lab3/UML%20-%20png/pu_administartora.png) <br>
 *autor: Krzysztof Jurkowski*
 
+![PU administratora systemu - przegladanie listy użytkowników](../Lab3/UML%20-%20png/Przeglądanie%20listy%20użytkowników.png) <br>
+*autor: Krzysztof Jurkowski*
+
+![PU administratora systemu - edycja konta użytkownika](../Lab3/UML%20-%20png/Edycja%20konta%20użytkownika.png) <br>
+*autor: Krzysztof Jurkowski*
+
+![PU administratora systemu - usunięcie konta użytkownika](../Lab3/UML%20-%20png/Usuwanie%20konta%20użytkownika.png) <br>
+*autor: Krzysztof Jurkowski*
+
+![PU administratora systemu - tworzenie konta użytkownika](../Lab3/UML%20-%20png/Tworzenie%20konta%20użytkownika.png) <br>
+*autor: Krzysztof Jurkowski*
+
 ![PU sprawdzenie statusu zamówienia](../Lab3/UML%20-%20png/status_zamówienia.jpg) <br>
 *autor: Tymoteusz Gryszkalis*
 
