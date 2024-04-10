@@ -2,12 +2,6 @@
 
 _autor: Tymoteusz Gryszkalis_
 
-## Dodawania kredytów
-
-## Jakiegoś przejścia do trybu ciemnego
-
-## Widoku subskrypcji konta usługodawcy
-
 ## Statystyki podstawowe:
 
 - **Widok:** Okno statystyk podstawowych.
@@ -70,3 +64,20 @@ _autor: Tymoteusz Gryszkalis_
 - **Kluczowe elementy:** Wyniki wyszukiwania, kategorie wyszukiwania, narzędzie filtrujące, narzędzie sortujące.
 
 ![panel wyszukiwania](pics/07panelszukania.png)
+
+## Dodawania kredytów
+
+- **Widok:** Okno dodawania kredytów użytkownikowi.
+- **Przejścia:** Możliwość dokonania operacji dodania kredytów [1]. Możliwość przejścia do strony głównej [2].
+- **Kluczowe elementy:** Formularz do sformalizowania dodania kredytów.
+
+![dodawanie kredytów](pics/08dodanie%20kredytow.png)
+
+## Jakiegoś przejścia do trybu ciemnego
+
+- **Widok:** Przykładowe okno trybu ciemnego.
+- **Przejścia:** Aby zmienić tryb jasności aplikacji należy wejść w rozwijane menu boczne [1], a następnie wybrać opcję trybu ciemnego [2].
+- **Kluczowe elementy:** Odpowiadające odpowiedniemu widokowi.
+
+![dodawanie kredytów](pics/0901panel%20boczny.png) <br>
+![dodawanie kredytów](pics/0902widok%20ciemny.png)
