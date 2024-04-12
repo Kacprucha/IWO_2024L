@@ -64,7 +64,7 @@ Przy każdej osobie zostało zaznaczone za jakie sekcje dokumentu była odpowied
 
 **Deweloprzey** pełnili role akceptacujną oraz konsulantacyjną odpowiednio **Tymoteusz Gryszkalis** do identyfikcji procesów biznesowych, **Mateusz Sobol** do realizacji diagramów BPMN procesów biznesowych i **Szymon Ochnio** do realizacji widoków systemowych. <br>
 **Analitycy Systemowi i Specjaliści od Przypadków Użycia** mieli za zadanie wykonać diagramów BPMN zamieszczonych w odzielnej dokumentacji. <br>
-**Projektancji UI** mieli za zdanie wykonać projekty widoków umiesczone w Figmie oraz w odzielnej dokumentacji. Dodatkowo **Mateusz Sobol**, **Szymon Ochnio** oraz **Mateusz Czarnecki** opracowali prototyp działania aplikacji również w Figmie.
+**Projektancji UI** mieli za zdanie wykonać projekty widoków umiesczone w Figmie oraz w odzielnej dokumentacji. Dodatkowo **Mateusz Sobol**, **Szymon Ochnio** oraz **Mateusz Czarnecki** opracowali prototyp działania aplikacji również w Figmie. Link do projektu umieszczony w rozdziale 9.4.
 
 - Tester
   - Igor Kędzierewski *- 7.1 Przypadków użycia*
@@ -1224,7 +1224,7 @@ Zaczęto pracę nad prototypem działającego interfejsu, opisano scenariusze pr
 
 ### 9.4 Prototyp widoków oraz działania aplikacji w Figmie
 Prace nad poszczególnymi widokami oraz umieszczony prototyp działania aplikacji odbywały się w projekcie w aplikacji Figma. <br> 
-[Projekt w Figmie.]([https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=240%3A1526&mode=design&t=bfKPOHLTCNhaCZWN-1](https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=0%3A1&mode=design&t=bfKPOHLTCNhaCZWN-1))
+[Projekt w Figmie.](https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=0%3A1&mode=design&t=bfKPOHLTCNhaCZWN-1)
 
 ## X. Słownik Dziedziny 
 ### 10.1 Terminologia biznesowa
