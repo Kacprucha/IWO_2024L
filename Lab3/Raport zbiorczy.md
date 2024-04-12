@@ -366,7 +366,7 @@ Po dokładnej analizie zaproponowanych opisów procesów biznesowych stwierdzam,
 ![PU zmainy języka systemu](../Lab3/UML%20-%20png/zmiania_jezyka.png) <br>
 *autor: Wojtek Szade*
 
-![PU dodania posta](../Lab3/UML%20-%20png/dodanie_posta.png.png) <br>
+![PU dodania posta](../Lab3/UML%20-%20png/dodanie_posta.png) <br>
 *autor: Wojtek Szade*
 
 ## Widoki do najważniejszych PU
