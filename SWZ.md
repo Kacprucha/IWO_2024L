@@ -1224,7 +1224,7 @@ Zaczęto pracę nad prototypem działającego interfejsu, opisano scenariusze pr
 
 ### 9.4 Prototyp widoków oraz działania aplikacji w Figmie
 Prace nad poszczególnymi widokami oraz umieszczony prototyp działania aplikacji odbywały się w projekcie w aplikacji Figma. <br> 
-[Projekt w Figmie.](https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=240%3A1526&mode=design&t=bfKPOHLTCNhaCZWN-1)
+[Projekt w Figmie.]([https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=240%3A1526&mode=design&t=bfKPOHLTCNhaCZWN-1](https://www.figma.com/file/sxp82WB1PXg7H91o4ST0ZE/IWO-2024?type=design&node-id=0%3A1&mode=design&t=bfKPOHLTCNhaCZWN-1))
 
 ## X. Słownik Dziedziny 
 ### 10.1 Terminologia biznesowa
